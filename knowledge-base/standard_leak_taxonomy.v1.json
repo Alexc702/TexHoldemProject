@@ -1,0 +1,316 @@
+[
+  {
+    "taxonomy_id": "LEAK_001",
+    "standard_tag": "auto_cbet_bad_boards",
+    "name_cn": "不利牌面自动持续下注",
+    "family": "aggression_leak",
+    "user_desc": "你太容易在不适合的牌面机械开枪。",
+    "fix": "先看牌面是否真的适合你施压，再决定是否 c-bet。",
+    "aliases": [
+      "AutoCBetOnBadBoards",
+      "MechanicalCBet"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_002",
+    "standard_tag": "missed_easy_cbet",
+    "name_cn": "错过简单持续下注",
+    "family": "passivity_leak",
+    "user_desc": "你在本该轻松拿主动的小池里太被动。",
+    "fix": "高张干燥、成对偏干等轻松牌面优先考虑小注拿池。",
+    "aliases": [
+      "MissedEasyCBet",
+      "MissedPairedBoardCBet",
+      "TooPassiveOnDryAceHigh"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_003",
+    "standard_tag": "poor_cbet_sizing",
+    "name_cn": "持续下注尺度不合理",
+    "family": "sizing_leak",
+    "user_desc": "你在简单牌面不是打太大，就是把本该轻压的 spot 打复杂。",
+    "fix": "干燥高张面优先小注，别用大注放大波动。",
+    "aliases": [
+      "OverbetDryBoards",
+      "PoorSizingDryPaired"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_004",
+    "standard_tag": "overbluff_dynamic_boards",
+    "name_cn": "在动态牌面诈唬过多",
+    "family": "aggression_leak",
+    "user_desc": "你在低张连张、湿润或高动态牌面太想把人打走。",
+    "fix": "动态牌面先降低空气牌施压频率。",
+    "aliases": [
+      "OverbluffDynamicFlops",
+      "OverbluffWetFlops"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_005",
+    "standard_tag": "overbluff_vs_station",
+    "name_cn": "对爱跟的人诈唬过多",
+    "family": "opponent_misread_leak",
+    "user_desc": "你太容易想把不爱弃牌的人打跑。",
+    "fix": "对跟注站少 bluff，多 value，一枪没打走少补第二枪。",
+    "aliases": [
+      "OverbluffVsStation",
+      "FancyPlayVsBadTarget"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_006",
+    "standard_tag": "auto_double_barrel",
+    "name_cn": "自动补第二枪",
+    "family": "aggression_leak",
+    "user_desc": "你把翻牌已下注误当成 turn 必须继续。",
+    "fix": "turn 先判断是否真的有 scare card、阻断或 fold equity，再决定是否继续。",
+    "aliases": [
+      "AutoDoubleBarrel",
+      "BadTurnBarrel",
+      "TurnOverbluff"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_007",
+    "standard_tag": "desperation_river_bluff",
+    "name_cn": "河牌绝望式诈唬",
+    "family": "mindset_leak",
+    "user_desc": "你在前面没讲好故事时，河牌还想硬演最后一下。",
+    "fix": "没有合理故事和足够弃牌率时，河牌少做临时起意的 bluff。",
+    "aliases": [
+      "DesperationBluff",
+      "IncoherentRiverStory",
+      "TripleBarrelWishfulThinking"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_008",
+    "standard_tag": "turning_sdv_into_bluff",
+    "name_cn": "把有摊牌价值的牌打成诈唬",
+    "family": "aggression_leak",
+    "user_desc": "你手里本来还有一定赢摊牌的机会，却总想再加工成 bluff。",
+    "fix": "有一定摊牌价值时，多想想控制和摊牌，而不是强行把自己变成 bluff。",
+    "aliases": [
+      "TurningSDVIntoBluff"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_009",
+    "standard_tag": "overfold_vs_small_bet",
+    "name_cn": "面对小注弃牌过多",
+    "family": "overfold_leak",
+    "user_desc": "对手只是轻轻试探，你却太快把还能继续的牌都丢了。",
+    "fix": "面对小注多考虑价格、后门和位置，不要自动弃牌。",
+    "aliases": [
+      "OverfoldVsSmallBet"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_010",
+    "standard_tag": "overfold_with_equity",
+    "name_cn": "有足够权益却弃牌过多",
+    "family": "overfold_leak",
+    "user_desc": "你对听牌、后门、两高张这类还能继续的牌太容易认输。",
+    "fix": "把强听牌、中强听牌、后门加位置与价格分开判断。",
+    "aliases": [
+      "OverfoldWithEquity",
+      "OverfoldStrongDraws",
+      "OverfoldComboDraws",
+      "OverfoldOESD",
+      "OverfoldOvercards"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_011",
+    "standard_tag": "overfold_medium_strength",
+    "name_cn": "中等牌力防守过度不足",
+    "family": "overfold_leak",
+    "user_desc": "你拿到第二对、中等对子或边缘 bluff-catcher 时太容易放弃。",
+    "fix": "中等牌力先看下注尺度、对手类型和跑线，再决定是否继续。",
+    "aliases": [
+      "OverfoldMediumPairs"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_012",
+    "standard_tag": "overfold_vs_aggro",
+    "name_cn": "面对激进对手过度弃牌",
+    "family": "opponent_misread_leak",
+    "user_desc": "对爱反打、爱开火的人，你把太多压力都当成了真牌。",
+    "fix": "对激进玩家适当拓宽继续范围，不要把每次反击都看得太重。",
+    "aliases": [
+      "OverfoldVsAggro"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_013",
+    "standard_tag": "hero_call_too_much",
+    "name_cn": "英雄跟注过多",
+    "family": "hero_call_leak",
+    "user_desc": "你太想抓到一次诈唬，付出了太多昂贵跟注。",
+    "fix": "先问自己：对手真的有足够 bluff 吗？没有就少做 hero call。",
+    "aliases": [
+      "HeroCallTooMuch",
+      "CuriosityCalls",
+      "EgoCalls",
+      "RiverEgoCalls",
+      "CallingWithoutBluffSource"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_014",
+    "standard_tag": "misread_passive_aggression",
+    "name_cn": "误判被动玩家后程强度",
+    "family": "opponent_misread_leak",
+    "user_desc": "你低估了被动玩家 turn/river 突然发力时的真实强度。",
+    "fix": "面对被动玩家的后程大动作，多往强 value 倾斜，减少硬扛。",
+    "aliases": [
+      "MisreadPassiveRiverAggression",
+      "StickyVsFlopAggression",
+      "StickyVsTurnRaise"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_015",
+    "standard_tag": "under_value_vs_station",
+    "name_cn": "对爱跟的人价值下注不足",
+    "family": "missed_value_leak",
+    "user_desc": "你明知道对手会跟，却还是打得太轻或直接不收钱。",
+    "fix": "对跟注站强牌和中上强度牌都要更敢收价值。",
+    "aliases": [
+      "UnderValueVsStation",
+      "MissedValueVsStation"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_016",
+    "standard_tag": "missed_thin_value",
+    "name_cn": "错过薄价值下注",
+    "family": "missed_value_leak",
+    "user_desc": "你有不少还能从更差牌拿到支付的 spot 被自己跳过了。",
+    "fix": "对被动或继续范围偏宽的对手，别错过河牌和延迟价值。",
+    "aliases": [
+      "MissedThinValue",
+      "MissedRiverThinValue",
+      "MissedDelayedValue",
+      "MissedTurnValue"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_017",
+    "standard_tag": "overvalue_medium_hands",
+    "name_cn": "中等强度牌打过头",
+    "family": "missed_value_leak",
+    "user_desc": "你把“可能还领先”误当成“必须继续榨到底”。",
+    "fix": "中等强度牌多做一街控制，少硬打到三条街。",
+    "aliases": [
+      "OvervalueMediumHands",
+      "OverplayMediumHands"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_018",
+    "standard_tag": "underprotect_strong_hands",
+    "name_cn": "强牌保护与收费不足",
+    "family": "missed_value_leak",
+    "user_desc": "你有明显领先牌时，太怕把人吓跑，结果少收了钱也没收费给听牌。",
+    "fix": "带听牌牌面上的强成牌要更敢下注收费。",
+    "aliases": [
+      "UnderprotectStrongHands",
+      "UnderbetMadeHands",
+      "MissedWetBoardValue"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_019",
+    "standard_tag": "value_sizing_too_small",
+    "name_cn": "价值下注尺度过小",
+    "family": "sizing_leak",
+    "user_desc": "你在该多收钱的时候下注太轻。",
+    "fix": "面对愿意继续的对手和偏弱跑线，强牌要敢用更大的价值尺度。",
+    "aliases": [
+      "UnderSizingValue"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_020",
+    "standard_tag": "missed_stab_and_pressure",
+    "name_cn": "错过示弱后的轻压机会",
+    "family": "passivity_leak",
+    "user_desc": "对手已经示弱了，你还是把很多现成小池白白让回去。",
+    "fix": "对手漏掉 c-bet 或连续 check 时，合适牌面多用小注顺手拿池。",
+    "aliases": [
+      "MissedStabSpot",
+      "MissedDelayedStab",
+      "MissedRiverStab",
+      "MissedSimplePressure"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_021",
+    "standard_tag": "missed_scare_barrel",
+    "name_cn": "错过 scare card 继续施压",
+    "family": "passivity_leak",
+    "user_desc": "turn 明显更适合你代表强牌时，你却太早放弃。",
+    "fix": "遇到高张 scare card 或明显压制对手继续范围的 turn，多考虑补第二枪。",
+    "aliases": [
+      "MissedScareCardBarrel",
+      "MissingGoodScareBarrels"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_022",
+    "standard_tag": "missed_population_exploit",
+    "name_cn": "错过人群倾向 exploit",
+    "family": "opponent_misread_leak",
+    "user_desc": "对不同类型玩家你调整不够，错过了本该赚到的小优势。",
+    "fix": "把紧玩家、被动玩家、跟注站和翻牌先看 turn 会弃的人分开打。",
+    "aliases": [
+      "MissedExploitVsNit",
+      "MissedTurnExploit"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_023",
+    "standard_tag": "under_aggressive_strong_draws",
+    "name_cn": "强听牌进攻性不足",
+    "family": "passivity_leak",
+    "user_desc": "你对强 draw 太保守，只会被动跟或干脆放弃。",
+    "fix": "强听牌在合适位置和价格下可以更主动施压。",
+    "aliases": [
+      "UnderAggressiveDraws"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_024",
+    "standard_tag": "poor_pot_control_and_induce",
+    "name_cn": "不会控池或诱导激进对手犯错",
+    "family": "opponent_misread_leak",
+    "user_desc": "面对会主动犯错的对手，你总是自己把牌局写太满。",
+    "fix": "对激进玩家，中等牌力多考虑控池和保留对手 bluff 空间。",
+    "aliases": [
+      "NoInduceVsAggro",
+      "NoPotControlVsAggro",
+      "OverplayVsAggro",
+      "OverplayingOOP"
+    ]
+  },
+  {
+    "taxonomy_id": "LEAK_025",
+    "standard_tag": "mindset_and_discipline_leak",
+    "name_cn": "心态与纪律性问题",
+    "family": "mindset_leak",
+    "user_desc": "你有时不是在打这手牌，而是在证明自己、怕显得弱或不愿意收手。",
+    "fix": "拿不准时先少犯错，把纪律放在表现欲前面。",
+    "aliases": [
+      "EgoAggression",
+      "LackOfDiscipline",
+      "FancyPlayWithShortStacks",
+      "OverCBetMultiway",
+      "TooScaredToValueBet"
+    ]
+  }
+]

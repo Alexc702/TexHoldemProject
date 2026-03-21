@@ -1,0 +1,5381 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "QWY2y",
+      "x": 80,
+      "y": 80,
+      "name": "00 Cover & Notes",
+      "width": 880,
+      "height": 540,
+      "fill": "$color-bg",
+      "cornerRadius": 32,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 28,
+      "children": [
+        {
+          "type": "frame",
+          "id": "ClcjH",
+          "name": "tag",
+          "fill": "#173129",
+          "cornerRadius": 999,
+          "padding": [
+            8,
+            14
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "nJ1nM",
+              "fill": "$color-accent",
+              "content": "TexHolding P0 UX Blueprint",
+              "fontFamily": "$font-display",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "LHq5K",
+          "fill": "$color-ink-inverse",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "TexHolding MVP P0\nPencil 交互设计文档",
+          "lineHeight": 0.95,
+          "fontFamily": "$font-display",
+          "fontSize": 48,
+          "fontWeight": "800"
+        },
+        {
+          "type": "text",
+          "id": "OyxnO",
+          "fill": "#D2DDD7",
+          "textGrowth": "fixed-width",
+          "width": 700,
+          "content": "中保真交互稿，服务首训完成率。覆盖欢迎、引导、训练、结果、提醒、登录、首页、赛后复盘八段主链路，可直接用于 UI 绘制、产品评审与开发拆解。",
+          "lineHeight": 1.45,
+          "fontFamily": "$font-body",
+          "fontSize": 16,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "RZlF9",
+          "name": "stats",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "cIca5",
+              "name": "stat1",
+              "width": "fill_container",
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8eoJ6",
+                  "fill": "$color-ink-inverse",
+                  "content": "15",
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "P770Q",
+                  "fill": "#D2DDD7",
+                  "content": "画板 / 文档帧",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q0hQj",
+              "name": "stat2",
+              "width": "fill_container",
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JphVT",
+                  "fill": "$color-ink-inverse",
+                  "content": "24",
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "fe79e",
+                  "fill": "#D2DDD7",
+                  "content": "首发场景上限",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YRYdC",
+              "name": "stat3",
+              "width": "fill_container",
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3CB47",
+                  "fill": "$color-ink-inverse",
+                  "content": "8",
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "mcKI4",
+                  "fill": "#D2DDD7",
+                  "content": "首发 leak 标签",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "G0Ro7",
+          "fill": "$color-accent",
+          "content": "文档结构：封面与说明 / 流程图 / 组件库 / 主链路页面稿",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JQXfI",
+      "x": 1000,
+      "y": 80,
+      "name": "01 Flow Map",
+      "width": 1480,
+      "height": 540,
+      "fill": "#F4EEE3",
+      "cornerRadius": 32,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 28,
+      "children": [
+        {
+          "type": "frame",
+          "id": "tOTvb",
+          "name": "flowHead",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "WsrT1",
+              "fill": "$color-ink",
+              "content": "P0 用户主链路",
+              "fontFamily": "$font-display",
+              "fontSize": 34,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "kAVjR",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "所有页面都围绕“快速完成首训，再把判断翻译成今晚可用的动作”来设计。",
+              "lineHeight": 1.4,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kk3ah",
+          "name": "flowRow",
+          "width": "fill_container",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "BYlfy",
+              "name": "step1",
+              "width": 170,
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JAMJK",
+                  "fill": "$color-ink-inverse",
+                  "content": "欢迎 / 引导",
+                  "fontFamily": "$font-display",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "n8sLA",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "价值理解 + 两个轻问答",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "wInA2",
+              "fill": "$color-accent",
+              "content": "→",
+              "fontFamily": "$font-display",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "qCvYm",
+              "name": "step2",
+              "width": 170,
+              "fill": "#173129",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0Jt6C",
+                  "fill": "$color-ink-inverse",
+                  "content": "5 题训练",
+                  "fontFamily": "$font-display",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "gVhq0",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "点击即答，底部即时反馈",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "6osmW",
+              "fill": "$color-accent",
+              "content": "→",
+              "fontFamily": "$font-display",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "nkxxr",
+              "name": "step3",
+              "width": 170,
+              "fill": "#F7B955",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AblH7",
+                  "fill": "#102019",
+                  "content": "训练结果",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "CwZVq",
+                  "fill": "#244235",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "主 leak + 修正原则 + 提醒预览",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "x8aAn",
+              "fill": "$color-accent",
+              "content": "→",
+              "fontFamily": "Outfit",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Pgym1",
+              "name": "step4",
+              "width": 170,
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "O5SWO",
+                  "fill": "$color-ink-inverse",
+                  "content": "今晚上桌提醒",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "kFxe2",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "把训练结论翻成 3 条桌边动作",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "ayUaf",
+              "fill": "$color-accent",
+              "content": "→",
+              "fontFamily": "Outfit",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "JNgl1",
+              "name": "step5",
+              "width": 170,
+              "fill": "#173129",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SqBTw",
+                  "fill": "$color-ink-inverse",
+                  "content": "首页",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "LhAxT",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "提醒、主 CTA、当前 leak",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "b5DpO",
+              "fill": "$color-accent",
+              "content": "→",
+              "fontFamily": "Outfit",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "2gAOk",
+              "name": "step6",
+              "width": 170,
+              "fill": "#F5EFE3",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-line"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "899au",
+                  "fill": "$color-ink",
+                  "content": "赛后复盘",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ekqU9",
+                  "fill": "$color-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "四步低精度录入，输出真实 leak",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bfMZZ",
+          "name": "notes",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "eOFFg",
+              "name": "rules",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7TJG2",
+                  "fill": "$color-ink",
+                  "content": "关键交互规则",
+                  "fontFamily": "Outfit",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "b00Sr",
+                  "fill": "$color-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "1. 欢迎页到进入第 1 题最多 3 次点击\n2. 训练题点击动作即提交\n3. 结果页主 CTA 永远是生成提醒\n4. 保存提醒再弹登录，不抢首训完成率",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XywDs",
+              "name": "kpis",
+              "width": 360,
+              "fill": "#11231E",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FD06C",
+                  "fill": "$color-ink-inverse",
+                  "content": "验证目标",
+                  "fontFamily": "Outfit",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Ki9z7",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "首训完成率 > 结果页转化率 > 复盘完成率 > 次日回访率",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "m7bO3",
+      "x": 80,
+      "y": 700,
+      "name": "02 Component Library",
+      "width": 1480,
+      "height": 1880,
+      "fill": "#F1E9DA",
+      "cornerRadius": 32,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 28,
+      "children": [
+        {
+          "type": "frame",
+          "id": "zgfEe",
+          "name": "libHead",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "sNzJI",
+              "fill": "$color-ink",
+              "content": "视觉与组件规范",
+              "fontFamily": "Outfit",
+              "fontSize": 34,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "m4K3j",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "围绕牌桌决策工具的中保真交互稿。统一使用深墨绿背景、暖米白卡片、琥珀金主动作和低术语密度文案。",
+              "lineHeight": 1.45,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ga75r",
+          "name": "foundation",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "RfTEx",
+              "name": "palette",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OGRaZ",
+                  "fill": "$color-ink",
+                  "content": "色彩",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Uz1nO",
+                  "fill": "$color-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "BG #0B1814\nSurface #F5EFE3\nAccent #D8A64E\nRisk #D86C56",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QijPq",
+              "name": "typeCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DNklf",
+                  "fill": "$color-ink",
+                  "content": "字体",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "vnIs6",
+                  "fill": "$color-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Title 32 / 40 Outfit 800\nBody 14 / 16 Inter 500\nStatus Bar SF Pro",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "daYlZ",
+              "name": "layoutCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nRPLK",
+                  "fill": "$color-ink",
+                  "content": "布局",
+                  "fontFamily": "Outfit",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "pxljb",
+                  "fill": "$color-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "iPhone 393 x 852\nWrapper padding 20\nMajor gap 24\nMinor gap 12 / 16",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "DjvXh",
+          "fill": "$color-ink",
+          "content": "Core Components",
+          "fontFamily": "Outfit",
+          "fontSize": 28,
+          "fontWeight": "800"
+        },
+        {
+          "type": "frame",
+          "id": "nCzeW",
+          "name": "row1",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "wRXJB",
+              "name": "statusPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wszlL",
+                  "fill": "$color-ink",
+                  "content": "Status Bar",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "ppTNv",
+                  "name": "Cmp / Status Bar",
+                  "reusable": true,
+                  "width": 393,
+                  "height": 62,
+                  "padding": [
+                    0,
+                    4
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ozyno",
+                      "fill": "$color-ink",
+                      "content": "9:41",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ov4Py",
+                      "fill": "$color-ink",
+                      "content": "5G 97%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g1Kxq",
+              "name": "headerPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "v4eaB",
+                  "fill": "$color-ink",
+                  "content": "Page Header",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "kyrO9",
+                  "name": "Cmp / Page Header",
+                  "reusable": true,
+                  "width": 353,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gXSNw",
+                      "fill": "$color-accent",
+                      "content": "Tonight's focus",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z2tLN",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "先练 5 手\n再带提醒上桌",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Outfit",
+                      "fontSize": 32,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hbLfk",
+                      "fill": "$color-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "练的不是题，而是朋友局里真会碰到的翻后 spot。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NGHpY",
+              "name": "buttonsPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PKUER",
+                  "fill": "$color-ink",
+                  "content": "Buttons",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "2Qr0c",
+                  "name": "Cmp / Button Primary",
+                  "reusable": true,
+                  "width": 353,
+                  "height": 56,
+                  "fill": "$color-accent",
+                  "cornerRadius": 28,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lWCWo",
+                      "fill": "$color-ink",
+                      "content": "开始第一组训练",
+                      "fontFamily": "Outfit",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "W0GaK",
+                  "name": "Cmp / Button Secondary",
+                  "reusable": true,
+                  "width": 353,
+                  "height": 56,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-line"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UgVR2",
+                      "fill": "$color-ink",
+                      "content": "稍后再说",
+                      "fontFamily": "Outfit",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r0g3x",
+                  "name": "Cmp / Button Text",
+                  "reusable": true,
+                  "cornerRadius": 12,
+                  "padding": [
+                    6,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "esPry",
+                      "fill": "$color-accent-strong",
+                      "content": "查看详细复盘",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lBrAv",
+          "name": "row2",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "xTeqr",
+              "name": "optionPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZXZPj",
+                  "fill": "$color-ink",
+                  "content": "Option Card",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "h6Vwk",
+                  "name": "Cmp / Option Card",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-accent"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rJcrz",
+                      "fill": "$color-ink-inverse",
+                      "content": "打过一些",
+                      "fontFamily": "Outfit",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YVSe2",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "知道基本规则，但翻后还不稳定。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LCkWw",
+              "name": "progressPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2luMi",
+                  "fill": "$color-ink",
+                  "content": "Training Progress",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "5F7mg",
+                  "name": "Cmp / Training Progress",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lhCbh",
+                      "fill": "$color-ink",
+                      "content": "第 1 / 5 手 · 朋友局常见翻后 spot",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NqXxk",
+                      "name": "track",
+                      "width": "fill_container",
+                      "height": 10,
+                      "fill": "#D8D1C2",
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "z0hAO",
+                          "width": 120,
+                          "height": "fill_container",
+                          "fill": "$color-accent",
+                          "cornerRadius": 999
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ekbek",
+              "name": "handPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pv9I7",
+                  "fill": "$color-ink",
+                  "content": "Hand Info Card",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "jkQkR",
+                  "name": "Cmp / Hand Info Card",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k5uFR",
+                      "fill": "$color-ink",
+                      "content": "BTN open · BB call · Flop A72r",
+                      "fontFamily": "Outfit",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uP0gQ",
+                      "fill": "$color-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Hero 按钮位先加注，大盲跟注。翻牌 A♣ 7♦ 2♠，小底池，轮到你行动。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Om2ak",
+          "name": "row3",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "q2vVk",
+              "name": "feedbackPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Iaxud",
+                  "fill": "$color-ink",
+                  "content": "Instant Feedback Sheet",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "tcbpC",
+                  "name": "Cmp / Instant Feedback Sheet",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#11231E",
+                  "cornerRadius": [
+                    28,
+                    28,
+                    20,
+                    20
+                  ],
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OdpMw",
+                      "fill": "$color-ink-inverse",
+                      "content": "推荐动作",
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "08CLz",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "高张干燥面通常更适合你轻压拿主动。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "smyMr",
+                      "fill": "$color-accent",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "桌边翻译：这种面轻轻打一枪最舒服，不需要猛轰。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6J8nY",
+                      "name": "nextBtn",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$color-accent",
+                      "cornerRadius": 26,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qPNiJ",
+                          "fill": "$color-ink",
+                          "content": "下一手",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sCUV4",
+              "name": "leakPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VT7MD",
+                  "fill": "$color-ink",
+                  "content": "Leak Card",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "lOb3Z",
+                  "name": "Cmp / Leak Card",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pE79n",
+                      "fill": "$color-accent",
+                      "content": "当前主 leak",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "5fOOG",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "不利牌面自动持续下注",
+                      "lineHeight": 1.05,
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XsR9G",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "先看牌面结构，再决定是否开枪。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Dj49A",
+              "name": "reminderPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w1PTI",
+                  "fill": "$color-ink",
+                  "content": "Reminder Card",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "AcZzA",
+                  "name": "Cmp / Reminder Card",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-line"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HgRQU",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "今晚上桌前，先记住这 3 条",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TWFyG",
+                      "fill": "$color-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• 低张连张湿润面，别像 A72 那样随便持续下注。\n• 对爱跟注的人，少 bluff，多 value。\n• 不确定时先少犯错，别把小池轻易打大。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XdNys",
+          "name": "row4",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "tmVCl",
+              "name": "recPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WO4QE",
+                  "fill": "$color-ink",
+                  "content": "Recommendation Card",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "6iWUU",
+                  "name": "Cmp / Recommendation Card",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g968m",
+                      "fill": "$color-accent",
+                      "content": "推荐下一组",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Fbqww",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "别在不利牌面乱开枪",
+                      "lineHeight": 1.05,
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XSXPF",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "预计 3 分钟 · 练 turn 不该自动补第二枪。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JG3Gc",
+              "name": "stepPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "77t68",
+                  "fill": "$color-ink",
+                  "content": "Review Stepper",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "AXHfG",
+                  "name": "Cmp / Review Stepper",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WAAOw",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "1 入池方式  ·  2 牌力  ·  3 牌面  ·  4 动作",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Outfit",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qrNrL",
+                      "fill": "$color-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "每一步都提供“记不清，继续”，优先保证完成而不是精确。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IieuA",
+              "name": "loginPreview",
+              "width": 440,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D7CDBA"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0HPUd",
+                  "fill": "$color-ink",
+                  "content": "Login Bottom Sheet",
+                  "fontFamily": "Outfit",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "aZ6sz",
+                  "name": "Cmp / Login Sheet",
+                  "reusable": true,
+                  "width": 353,
+                  "fill": "#11231E",
+                  "cornerRadius": [
+                    28,
+                    28,
+                    20,
+                    20
+                  ],
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0QOrl",
+                      "fill": "$color-ink-inverse",
+                      "content": "保存提醒与训练进度",
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jI5yc",
+                      "name": "phoneField",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 20,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1ivqB",
+                          "fill": "$color-muted",
+                          "content": "手机号",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9D7wc",
+                      "name": "codeField",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 20,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kCbhW",
+                          "fill": "$color-muted",
+                          "content": "验证码",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eTBY1",
+                      "name": "loginBtn",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$color-accent",
+                      "cornerRadius": 26,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "culpI",
+                          "fill": "$color-ink",
+                          "content": "登录并保存",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dtIVf",
+                      "fill": "$color-accent",
+                      "content": "稍后再说",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "d2dV3",
+      "x": 1640,
+      "y": 700,
+      "name": "03 Welcome",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "8qjtH",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VuS4G",
+              "name": "welcomeStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ptqdD",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7WI8Z",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Vczql",
+              "name": "welcomeWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pb8Tr",
+                  "name": "welcomeTop",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sfz0M",
+                      "name": "welcomeChip",
+                      "fill": "#173129",
+                      "cornerRadius": 999,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gFVR1",
+                          "fill": "$color-accent",
+                          "content": "3 分钟类实战训练",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "zZyjx",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "下一场朋友局\n打得更像高手",
+                      "lineHeight": 0.96,
+                      "fontFamily": "Outfit",
+                      "fontSize": 40,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Gyp1D",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "练 5 手，找到你最容易亏的 spot；打前记住重点；打后复盘真实手牌。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pjw1q",
+                      "name": "sellCard",
+                      "width": "fill_container",
+                      "fill": "#11231E",
+                      "cornerRadius": 24,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color-line"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TuisC",
+                          "fill": "$color-ink-inverse",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "1. 3 分钟类实战训练\n2. 生成今晚上桌提醒\n3. 复盘自己真实打过的一手牌",
+                          "lineHeight": 1.28,
+                          "fontFamily": "Outfit",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dPSeu",
+                      "name": "exampleCard",
+                      "width": "fill_container",
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ciaxh",
+                          "fill": "$color-accent-strong",
+                          "content": "示例结果",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        },
+                        {
+                          "type": "text",
+                          "id": "jz34N",
+                          "fill": "$color-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "你最容易亏：在不利牌面还想继续施压\n今晚提醒：对爱跟注的朋友少 bluff，多 value",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cxsuG",
+                  "name": "welcomeBottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LAaNt",
+                      "name": "welcomeBtn",
+                      "width": "fill_container",
+                      "height": 56,
+                      "fill": "$color-accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XpZrG",
+                          "fill": "$color-ink",
+                          "content": "开始第一组训练",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jpqai",
+                      "fill": "#CDB485",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "我已有账号",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ygeLT",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "JPy7c",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "03 Welcome",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "kjk6a",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n10 秒内让用户理解：练 5 手就能拿到今晚上桌提醒。\n\n进入条件\n新用户首次进入产品。\n\n主 CTA\n开始第一组训练。\n\n关键状态\n未登录；可走游客模式；示例结果只增强信任，不改变主流程。\n\n跳转去向\n进入引导 Step 1。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "375cA",
+      "x": 2313,
+      "y": 700,
+      "name": "04 Onboarding Step 1",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "gRKHD",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mqh2k",
+              "name": "s1Status",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y3z5J",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "KQS18",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Qi2Ay",
+              "name": "s1Wrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LpzBV",
+                  "name": "s1Top",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SPE7P",
+                      "fill": "$color-accent",
+                      "content": "1 / 2",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "hGzoU",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "你现在更像\n哪类玩家？",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Outfit",
+                      "fontSize": 36,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "R1pwc",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "快速粗分用户层级，用来调整首页首推内容。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AphID",
+                      "name": "stack",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "G5Ssi",
+                          "name": "opt1",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Q9nYq",
+                              "fill": "$color-ink",
+                              "content": "刚会规则",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T2SsH",
+                          "name": "opt2",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#11231E",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$color-accent"
+                          },
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ry25J",
+                              "fill": "$color-ink-inverse",
+                              "content": "打过一些",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DM24I",
+                          "name": "opt3",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "K85ge",
+                              "fill": "$color-ink",
+                              "content": "想系统提高",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E2z5f",
+                          "name": "opt4",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "REpzO",
+                              "fill": "$color-ink",
+                              "content": "跳过，直接开始",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Hdpyp",
+                  "name": "s1Bottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iWGJw",
+                      "name": "cta",
+                      "width": "fill_container",
+                      "height": 56,
+                      "fill": "$color-accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3TuXS",
+                          "fill": "$color-ink",
+                          "content": "继续",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RsKNq",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "WkobE",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "04 Onboarding Step 1",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "Q5qRu",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n用一个问题快速粗分用户层级。\n\n进入条件\n点击欢迎页主 CTA 后进入。\n\n主 CTA\n继续。\n\n关键状态\n单选；选中后按钮激活；本稿展示“打过一些”已选中。\n\n跳转去向\n进入引导 Step 2。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oVbRh",
+      "x": 2986,
+      "y": 700,
+      "name": "05 Onboarding Step 2",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "uhr9I",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ffeij",
+              "name": "s2Status",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tJaRW",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "OyeHV",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7fAJm",
+              "name": "s2Wrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VBHeg",
+                  "name": "s2Top",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Apd6w",
+                      "fill": "$color-accent",
+                      "content": "2 / 2",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "wAzgV",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "你现在最想\n先解决什么？",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Outfit",
+                      "fontSize": 36,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hoBIG",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "这个选择会影响结果页解释文案和首页首推内容。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A5M4i",
+                      "name": "stack2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Xun8e",
+                          "name": "q1",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "yJPp1",
+                              "fill": "$color-ink",
+                              "content": "什么时候该下注",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Ad8ag",
+                          "name": "q2",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "k9ucS",
+                              "fill": "$color-ink",
+                              "content": "什么时候该诈唬",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VpkjN",
+                          "name": "q3",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#11231E",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$color-accent"
+                          },
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vwqHY",
+                              "fill": "$color-ink-inverse",
+                              "content": "怎么针对对手调整",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qA9WW",
+                          "name": "q4",
+                          "width": "fill_container",
+                          "height": 68,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Q4kAi",
+                              "fill": "$color-ink",
+                              "content": "直接带我开始",
+                              "fontFamily": "Outfit",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1S2ML",
+                  "name": "s2Bottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UYkXF",
+                      "name": "startBtn",
+                      "width": "fill_container",
+                      "height": 56,
+                      "fill": "$color-accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X0Phh",
+                          "fill": "$color-ink",
+                          "content": "开始第一组训练",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RRVAy",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "dgsSN",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "05 Onboarding Step 2",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "HxQTa",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n确定用户当前最想解决的问题。\n\n进入条件\n完成 Step 1。\n\n主 CTA\n开始第一组训练。\n\n关键状态\n单选；选中后按钮激活；本稿展示“怎么针对对手调整”已选中。\n\n跳转去向\n直接进入首轮训练。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HB1rz",
+      "x": 3659,
+      "y": 700,
+      "name": "06 Training",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "DkFjk",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZYqz8",
+              "name": "tStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nYSPC",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "OS70S",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pxICm",
+              "name": "tWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rDy7E",
+                  "name": "tTop",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "soINZ",
+                      "name": "headRow",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5PcYK",
+                          "fill": "$color-ink-inverse",
+                          "content": "第 1 / 5 手",
+                          "fontFamily": "Outfit",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "x9x5a",
+                          "fill": "$color-accent",
+                          "content": "退出",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TWdDi",
+                      "fill": "$color-accent",
+                      "content": "朋友局常见翻后 spot",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XSsTH",
+                      "name": "metaCard",
+                      "width": "fill_container",
+                      "fill": "#11231E",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EJE6k",
+                          "fill": "$color-ink-inverse",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": " · BTN open\n · BB call\n · Flop A♣ 7♦ 2♠",
+                          "lineHeight": 1.1,
+                          "fontFamily": "Outfit",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ix1Hr",
+                          "fill": "#D2DDD7",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "你在按钮位开局加注，大盲跟注。翻牌后轮到你行动。小底池，单挑。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Dvsnl",
+                      "name": "boardCard",
+                      "width": "fill_container",
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "91z5K",
+                          "fill": "$color-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "这种面通常更有利于你先轻压拿主动。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "22Q3l",
+                          "fill": "$color-accent-strong",
+                          "content": "点击动作即提交，不需要二次确认。",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d1nB1",
+                  "name": "tBottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T6VLm",
+                      "fill": "$color-ink-inverse",
+                      "content": "你会怎么打？",
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XNW3Z",
+                      "name": "actions",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "311qE",
+                          "name": "a1",
+                          "width": "fill_container",
+                          "height": 54,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EzxVI",
+                              "fill": "$color-ink",
+                              "content": "Check",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RiwEP",
+                          "name": "a2",
+                          "width": "fill_container",
+                          "height": 54,
+                          "fill": "$color-accent",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ldeqq",
+                              "fill": "$color-ink",
+                              "content": "小注持续下注",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XYTL0",
+                          "name": "a3",
+                          "width": "fill_container",
+                          "height": 54,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DAKYe",
+                              "fill": "$color-ink",
+                              "content": "大注持续下注",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JpyFX",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "cvuU9",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "06 Training",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "kZD90",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n让用户像在牌桌上一样快速做选择。\n\n进入条件\n完成 Step 2 后自动进入。\n\n主 CTA\n动作按钮本身即提交。\n\n关键状态\n本页展示初始题面；开发还需支持已选动作高亮与反馈弹层态。\n\n跳转去向\n答题后进入即时反馈态。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MyxRs",
+      "x": 4332,
+      "y": 700,
+      "name": "07 Training Feedback",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "C6uvn",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vAUgn",
+              "x": 0,
+              "y": 0,
+              "name": "fStatus",
+              "width": 393,
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CVgfr",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "53fVP",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6FHjk",
+              "x": 20,
+              "y": 70,
+              "name": "base",
+              "opacity": 0.94,
+              "width": 353,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "85YG7",
+                  "fill": "$color-ink-inverse",
+                  "content": "第 1 / 5 手",
+                  "fontFamily": "Outfit",
+                  "fontSize": 24,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "VvTqa",
+                  "name": "baseCard",
+                  "width": "fill_container",
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b4Zqe",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "BTN open · BB call · Flop A♣ 7♦ 2♠",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rmwGj",
+                      "fill": "#D2DDD7",
+                      "content": "你刚选择了“小注持续下注”。",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LHbn0",
+                  "name": "baseActs",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LZcLl",
+                      "name": "fA1",
+                      "opacity": 0.7,
+                      "width": "fill_container",
+                      "height": 54,
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Wbi7J",
+                          "fill": "$color-ink",
+                          "content": "Check",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fa86G",
+                      "name": "fA2",
+                      "width": "fill_container",
+                      "height": 54,
+                      "fill": "$color-accent",
+                      "cornerRadius": 24,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RdN3D",
+                          "fill": "$color-ink",
+                          "content": "小注持续下注",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U5Plp",
+                      "name": "fA3",
+                      "opacity": 0.7,
+                      "width": "fill_container",
+                      "height": 54,
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VznE2",
+                          "fill": "$color-ink",
+                          "content": "大注持续下注",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "fdpWj",
+              "x": 0,
+              "y": 0,
+              "name": "scrim",
+              "fill": "#00000066",
+              "width": 393,
+              "height": 852
+            },
+            {
+              "type": "frame",
+              "id": "SaYfr",
+              "x": 12,
+              "y": 520,
+              "name": "sheet",
+              "width": 369,
+              "fill": "#11231E",
+              "cornerRadius": [
+                28,
+                28,
+                20,
+                20
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                20,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7nPvS",
+                  "fill": "$color-ink-inverse",
+                  "content": "推荐动作",
+                  "fontFamily": "Outfit",
+                  "fontSize": 24,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "BURrp",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "高张干燥面通常更适合前位加注者轻压，不需要很大下注就能拿到压力。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "tgnnT",
+                  "fill": "$color-accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "桌边翻译：这种面轻轻打一枪最舒服，不需要打太大。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "s4tdb",
+                  "name": "next",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "$color-accent",
+                  "cornerRadius": 26,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CAevX",
+                      "fill": "$color-ink",
+                      "content": "下一手",
+                      "fontFamily": "Outfit",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mPVwQ",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "jfOID",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "07 Training Feedback",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "zp4TC",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n在不打断节奏的前提下给出即时反馈。\n\n进入条件\n训练页中用户完成一次选择后。\n\n主 CTA\n下一手。\n\n关键状态\n反馈等级 + 一句话原因 + 桌边翻译；题面仍保留在底层。\n\n跳转去向\n继续下一题，或第 5 手后进入结果页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "z4w1k",
+      "x": 5005,
+      "y": 700,
+      "name": "08 Training Result",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "eSiXG",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "1CpRQ",
+              "name": "rStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FVYRt",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "F1SIX",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DsyaL",
+              "name": "rWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HKeEW",
+                  "name": "rTop",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GZXng",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "这轮你已经抓到\n一个关键点了",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Outfit",
+                      "fontSize": 36,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LzD1s",
+                      "fill": "$color-accent",
+                      "content": "正确命中 4 / 5 · 平均决策 11 秒",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8wdMu",
+                      "name": "leak",
+                      "width": "fill_container",
+                      "fill": "#173129",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eD9jo",
+                          "fill": "$color-accent",
+                          "content": "当前主 leak",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        },
+                        {
+                          "type": "text",
+                          "id": "s7WdY",
+                          "fill": "$color-ink-inverse",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "不利牌面自动持续下注",
+                          "lineHeight": 1.05,
+                          "fontFamily": "Outfit",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kxGWQ",
+                          "fill": "#D2DDD7",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "你太容易把所有翻前主动权都延续到翻牌。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yBCRJ",
+                      "name": "preview",
+                      "width": "fill_container",
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E542U",
+                          "fill": "$color-ink",
+                          "content": "今晚最该记住的 3 条",
+                          "fontFamily": "Outfit",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lqOCP",
+                          "fill": "$color-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "• 低张连张湿润面，别像 A72 那样随便持续下注。\n• 对爱跟注的朋友少 bluff，多 value。\n• 不确定时，先少犯错。",
+                          "lineHeight": 1.55,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RbwUr",
+                      "name": "rec",
+                      "width": "fill_container",
+                      "fill": "#11231E",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UruEF",
+                          "fill": "$color-accent",
+                          "content": "推荐下一组",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        },
+                        {
+                          "type": "text",
+                          "id": "NarZT",
+                          "fill": "$color-ink-inverse",
+                          "content": "别在不利牌面乱开枪",
+                          "fontFamily": "Outfit",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ed7SC",
+                          "fill": "#D2DDD7",
+                          "content": "预计 3 分钟",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jqxo4",
+                  "name": "rBottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yxPjF",
+                      "name": "mainBtn",
+                      "width": "fill_container",
+                      "height": 56,
+                      "fill": "$color-accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Te04O",
+                          "fill": "$color-ink",
+                          "content": "生成今晚上桌提醒",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "W7KGV",
+                      "fill": "#CDB485",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "查看详细复盘",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BlHel",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "ltudx",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "08 Training Result",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "kXw0O",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n把 5 题结果翻译成今晚就能用的结论。\n\n进入条件\n完成首轮 5 题训练。\n\n主 CTA\n生成今晚上桌提醒。\n\n关键状态\n分数弱化展示；输出必须包含主 leak、修正原则、3 条提醒、下一组推荐。\n\n跳转去向\n进入提醒页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sazGE",
+      "x": 5678,
+      "y": 700,
+      "name": "09 Reminder",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "6Ej8T",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GcXUJ",
+              "name": "remStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2kE8f",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Lrmta",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JKVXw",
+              "name": "remWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XBUHv",
+                  "name": "remTop",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t5MDq",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "今晚上桌前\n先记住这 3 条",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Outfit",
+                      "fontSize": 36,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1H92O",
+                      "name": "mainCard",
+                      "width": "fill_container",
+                      "fill": "#F5EFE3",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k6zVO",
+                          "fill": "$color-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "1. 低张连张湿润面，别像 A72 那样随便开枪。\n2. 对爱跟注的人，少 bluff，多 value。\n3. 不确定时，先少犯错，不要轻易把小池打大。",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Outfit",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CKqbX",
+                      "name": "oppCard",
+                      "width": "fill_container",
+                      "fill": "#11231E",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D1B9h",
+                          "fill": "$color-accent",
+                          "content": "今晚特别注意",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        },
+                        {
+                          "type": "text",
+                          "id": "OfdRE",
+                          "fill": "#D2DDD7",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "遇到愿意跟到底的人，别执着把他打跑。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PsMlJ",
+                      "name": "dontCard",
+                      "width": "fill_container",
+                      "fill": "#173129",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5ar4o",
+                          "fill": "$color-accent",
+                          "content": "今晚先别这样打",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.1
+                        },
+                        {
+                          "type": "text",
+                          "id": "THseY",
+                          "fill": "#D2DDD7",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "别为了赢得漂亮而乱诈唬。",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uYS0L",
+                  "name": "remBottom",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BSbza",
+                      "name": "saveBtn",
+                      "width": "fill_container",
+                      "height": 56,
+                      "fill": "$color-accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7C1lE",
+                          "fill": "$color-ink",
+                          "content": "保存并进入首页",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LxVx4",
+                      "fill": "#CDB485",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "保存后触发手机号登录 Sheet",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6FXHR",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "XaO0h",
+              "fill": "$color-ink",
+              "content": "09 Reminder",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "vybrl",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n把训练结论变成赛前可扫描清单。\n\n进入条件\n点击结果页主 CTA 后进入。\n\n主 CTA\n保存并进入首页。\n\n关键状态\n提醒固定为三段结构：先记住 / 特别注意 / 今晚别这样。\n\n跳转去向\n触发登录 Sheet，随后进入首页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PaIXY",
+      "x": 6351,
+      "y": 700,
+      "name": "10 Login Sheet",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "8xeIV",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pD9ME",
+              "x": 0,
+              "y": 0,
+              "name": "lStatus",
+              "width": 393,
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ix4vr",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "OQ97y",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YTw7y",
+              "x": 20,
+              "y": 70,
+              "name": "loginBase",
+              "opacity": 0.92,
+              "width": 353,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zzMMH",
+                  "fill": "$color-ink-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "今晚上桌前\n先记住这 3 条",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Outfit",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "N0Pka",
+                  "name": "baseCard",
+                  "width": "fill_container",
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hEXVG",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "1. 低张连张湿润面，别随便开枪。\n2. 对爱跟注的人，少 bluff，多 value。\n3. 不确定时，先少犯错。",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Outfit",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "1dUCj",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "点击保存后再要求登录，不打断前面体验。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "zDMcf",
+              "x": 0,
+              "y": 0,
+              "name": "scrim",
+              "fill": "#00000077",
+              "width": 393,
+              "height": 852
+            },
+            {
+              "type": "frame",
+              "id": "UYMzE",
+              "x": 12,
+              "y": 462,
+              "name": "sheet",
+              "width": 369,
+              "fill": "#11231E",
+              "cornerRadius": [
+                28,
+                28,
+                20,
+                20
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                20,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cw9oD",
+                  "fill": "$color-ink-inverse",
+                  "content": "保存提醒与训练进度",
+                  "fontFamily": "Outfit",
+                  "fontSize": 24,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Zw2nO",
+                  "fill": "#D2DDD7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "输入手机号后，今天提醒和后续训练都会保留下来。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "XBL1L",
+                  "name": "phoneField",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 20,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QiS0Y",
+                      "fill": "$color-muted",
+                      "content": "手机号",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i9SUU",
+                  "name": "codeField",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 20,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yzdp6",
+                      "fill": "$color-muted",
+                      "content": "验证码",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ONpKh",
+                  "name": "loginBtn",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "$color-accent",
+                  "cornerRadius": 26,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mzfLi",
+                      "fill": "$color-ink",
+                      "content": "登录并保存",
+                      "fontFamily": "Outfit",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "S6xEk",
+                  "fill": "$color-accent",
+                  "content": "稍后再说",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sJiui",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "tK1qm",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "10 Login Sheet",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "9NWGb",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n在结果已可见的前提下完成轻登录绑定。\n\n进入条件\n提醒页点击保存按钮，或首次进首页。\n\n主 CTA\n登录并保存。\n\n关键状态\n提供手机号、验证码和“稍后再说”；背景仍可看见提醒页。\n\n跳转去向\n登录后进入首页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NKivo",
+      "x": 7024,
+      "y": 700,
+      "name": "11 Home After Training",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "zx8sn",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xaOjC",
+              "name": "hStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MK1Zl",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "TRaSs",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dIv46",
+              "name": "hWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4DJxg",
+                  "fill": "$color-ink-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "今晚怎么打得更稳？",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Outfit",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "f4tUy",
+                  "name": "remHome",
+                  "width": "fill_container",
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AlEHr",
+                      "fill": "$color-accent-strong",
+                      "content": "今天上桌提醒",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Gr5TF",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• 低张连张湿润面别乱开枪\n• 对爱跟注的人少 bluff，多 value",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x9n4H",
+                  "name": "ctaCard",
+                  "width": "fill_container",
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T17lM",
+                      "fill": "$color-accent",
+                      "content": "今天练这一组最值",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "YhSB3",
+                      "fill": "$color-ink-inverse",
+                      "content": "别在不利牌面乱开枪",
+                      "fontFamily": "Outfit",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hanUq",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "因为你刚刚最容易在动态牌面机械延续主动权。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N0Xji",
+                      "name": "ctaBtn",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$color-accent",
+                      "cornerRadius": 26,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HpE2v",
+                          "fill": "$color-ink",
+                          "content": "继续训练",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r5KRL",
+                  "name": "leakHome",
+                  "width": "fill_container",
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6G86B",
+                      "fill": "$color-accent",
+                      "content": "你当前最主要的问题",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "xl7Ml",
+                      "fill": "$color-ink-inverse",
+                      "content": "不利牌面自动持续下注",
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M03Sg",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "先看牌面结构，再决定是否开枪。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hL5ge",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "Cofnh",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "11 Home After Training",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "ci8dS",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n作为训练后的日常调度中心。\n\n进入条件\n保存提醒并完成登录，或跳过登录后首次进首页。\n\n主 CTA\n继续训练。\n\n关键状态\n首屏只保留三块：今日提醒、唯一主 CTA、当前主 leak。\n\n跳转去向\n进入下一组训练。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "s251V",
+      "x": 7697,
+      "y": 700,
+      "name": "12 Review Input",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "I13eq",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "MgAvH",
+              "name": "revStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8XyA0",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "uk7b7",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mt3Vu",
+              "name": "revWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xirF3",
+                  "fill": "$color-ink-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "复盘一手你刚打过的牌",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Outfit",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "3C0Fe",
+                  "name": "stepCard",
+                  "width": "fill_container",
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wz3BE",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": " · 1 入池方式\n · 2 牌力\n · 3 牌面\n · 4 动作",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Outfit",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XuCMM",
+                      "fill": "$color-accent-strong",
+                      "content": "每一步都允许“记不清，继续”。",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n91KY",
+                  "name": "currentCard",
+                  "width": "fill_container",
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EpSO4",
+                      "fill": "$color-ink-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Step 1 · 这手牌大概是什么入池方式？",
+                      "lineHeight": 1.15,
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "syjHv",
+                      "name": "optStack",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "851s5",
+                          "name": "r1",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "$color-accent",
+                          "cornerRadius": 20,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hdHQR",
+                              "fill": "$color-ink",
+                              "content": "我翻前加注，至少一人跟注",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uEDEF",
+                          "name": "r2",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 20,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kVfH9",
+                              "fill": "$color-ink",
+                              "content": "我是跟注入池",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gNtqw",
+                          "name": "r3",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "#F5EFE3",
+                          "cornerRadius": 20,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FpUsa",
+                              "fill": "$color-ink",
+                              "content": "我是 3bet 入池",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "J4soG",
+                          "name": "r4",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "#173129",
+                          "cornerRadius": 20,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cLkfe",
+                              "fill": "$color-ink-inverse",
+                              "content": "记不清，继续",
+                              "fontFamily": "Outfit",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mRWhg",
+                  "name": "finalHint",
+                  "width": "fill_container",
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lRpQb",
+                      "fill": "$color-accent",
+                      "content": "最终提交前状态",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "bGUKT",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Step 4 会合并“打到哪里 + 关键动作 + 你最担心哪里打错”，主 CTA 为生成复盘结果。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bGB5s",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "oPhzQ",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "12 Review Input",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "uESQ7",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n让用户用低精度信息完成复盘。\n\n进入条件\n首页点击“复盘一手”。\n\n主 CTA\n最终提交前为“生成复盘结果”。\n\n关键状态\n本稿同时展示 Step 1 和最终提交前说明，强调“记不清也能继续”。\n\n跳转去向\n进入复盘结果页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HiTiR",
+      "x": 8370,
+      "y": 700,
+      "name": "13 Review Result",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "KTUo3",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "r0Aig",
+              "name": "rrStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "O8CKS",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ZuydF",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zu8f3",
+              "name": "rrWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LBQUO",
+                  "name": "badge",
+                  "fill": "#D86C5622",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-risk"
+                  },
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jxCcm",
+                      "fill": "$color-risk",
+                      "content": "低置信度建议",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "nhVxk",
+                  "fill": "$color-ink-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "这手更像是\n思路问题",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Outfit",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "UUaCc",
+                  "name": "narrative",
+                  "width": "fill_container",
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QcOeb",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "你这手更像是在试图把一个本来就不爱弃牌的人打走。问题不一定是你下注了，而是你在这种对象身上仍然想靠 bluff 解决问题。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iWHo1",
+                  "name": "leakCard",
+                  "width": "fill_container",
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4m4mB",
+                      "fill": "$color-accent",
+                      "content": "这手暴露出的倾向",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "wHjSK",
+                      "fill": "$color-ink-inverse",
+                      "content": "对爱跟的人诈唬过多",
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4EAAd",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "下次遇到这类对手，少 bluff，多 value。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6hKvK",
+                  "name": "nextCard",
+                  "width": "fill_container",
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UH9yq",
+                      "fill": "$color-accent-strong",
+                      "content": "下次先记住",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "nhZov",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• 对爱跟注的人别执着把他打跑\n• 没有明显弃牌率时，减少空气牌施压\n• 一枪没打走，第二枪别乱补",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wKtug",
+                  "name": "rrBtn",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "$color-accent",
+                  "cornerRadius": 28,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nN3EF",
+                      "fill": "$color-ink",
+                      "content": "练这个",
+                      "fontFamily": "Outfit",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9TLeB",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "Z8vAs",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "13 Review Result",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "p8JpC",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n让用户感到系统看见了真实问题。\n\n进入条件\n复盘输入完成后生成。\n\n主 CTA\n练这个。\n\n关键状态\n信息不足时必须显示“低置信度建议”，不能伪装成精确分析。\n\n跳转去向\n进入推荐训练，或返回首页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MJJuQ",
+      "x": 9043,
+      "y": 700,
+      "name": "14 Home After Review",
+      "width": 633,
+      "height": 932,
+      "fill": "#E8DDCC00",
+      "gap": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "FHy5o",
+          "name": "Phone",
+          "width": 393,
+          "height": 852,
+          "fill": "$color-bg",
+          "cornerRadius": 36,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "PAHvq",
+              "name": "hrStatus",
+              "width": "fill_container",
+              "height": 62,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pFG4J",
+                  "fill": "$color-ink-inverse",
+                  "content": "9:41",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "iLbln",
+                  "fill": "$color-ink-inverse",
+                  "content": "5G 97%",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pT8yI",
+              "name": "hrWrap",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "padding": [
+                8,
+                20,
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mpIng",
+                  "fill": "$color-ink-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "今天先复盘\n一手真实牌",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Outfit",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "ezf84",
+                  "name": "remCard",
+                  "width": "fill_container",
+                  "fill": "#F5EFE3",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "crDey",
+                      "fill": "$color-accent-strong",
+                      "content": "今天上桌提醒",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "xIYja",
+                      "fill": "$color-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• 对爱跟的人别执着把他打跑\n• 没有明显弃牌率时，减少空气牌施压",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lfNMz",
+                  "name": "ctaCard",
+                  "width": "fill_container",
+                  "fill": "#11231E",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m4IMG",
+                      "fill": "$color-accent",
+                      "content": "现在最值的动作",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "lnir0",
+                      "fill": "$color-ink-inverse",
+                      "content": "复盘一手",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 24,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qNhku",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "你已经做过一次复盘，晚间优先把真实牌局再看一手。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "htDdh",
+                      "name": "ctaBtn",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$color-accent",
+                      "cornerRadius": 26,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C0p4E",
+                          "fill": "$color-ink",
+                          "content": "复盘一手",
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2tv4x",
+                  "name": "leakCard",
+                  "width": "fill_container",
+                  "fill": "#173129",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Egm9G",
+                      "fill": "$color-accent",
+                      "content": "当前来自真实牌局的问题",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "S0eYu",
+                      "fill": "$color-ink-inverse",
+                      "content": "对爱跟的人诈唬过多",
+                      "fontFamily": "Outfit",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0uBDX",
+                      "fill": "#D2DDD7",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "这类问题来自你的复盘，不只是训练判断。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rYjw5",
+          "name": "Notes",
+          "width": 216,
+          "height": 852,
+          "fill": "#F5EFE3",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "spjAN",
+              "fill": "$color-ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "14 Home After Review",
+              "fontFamily": "Outfit",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "I62UF",
+              "fill": "$color-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "页面目标\n展示“按用户阶段切换 CTA”的首页版本。\n\n进入条件\n至少完成一次复盘后再次进入首页。\n\n主 CTA\n复盘一手。\n\n关键状态\n版式与训练后首页一致，但主 CTA 和 leak 描述切换为复盘优先。\n\n跳转去向\n进入赛后复盘录入页。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color-accent": {
+      "type": "color",
+      "value": "#D8A64E"
+    },
+    "color-accent-strong": {
+      "type": "color",
+      "value": "#C58A28"
+    },
+    "color-bg": {
+      "type": "color",
+      "value": "#0B1814"
+    },
+    "color-ink": {
+      "type": "color",
+      "value": "#102019"
+    },
+    "color-ink-inverse": {
+      "type": "color",
+      "value": "#F6F1E6"
+    },
+    "color-line": {
+      "type": "color",
+      "value": "#264238"
+    },
+    "color-muted": {
+      "type": "color",
+      "value": "#6B7D75"
+    },
+    "color-muted-2": {
+      "type": "color",
+      "value": "#9BA89E"
+    },
+    "color-panel": {
+      "type": "color",
+      "value": "#11231E"
+    },
+    "color-panel-2": {
+      "type": "color",
+      "value": "#173129"
+    },
+    "color-risk": {
+      "type": "color",
+      "value": "#D86C56"
+    },
+    "color-success": {
+      "type": "color",
+      "value": "#4E8B6C"
+    },
+    "color-surface": {
+      "type": "color",
+      "value": "#F5EFE3"
+    },
+    "color-surface-soft": {
+      "type": "color",
+      "value": "#E7DDCC"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Outfit"
+    },
+    "font-status": {
+      "type": "string",
+      "value": "SF Pro"
+    },
+    "radius-card": {
+      "type": "number",
+      "value": 24
+    },
+    "radius-pill": {
+      "type": "number",
+      "value": 28
+    },
+    "radius-sheet": {
+      "type": "number",
+      "value": 28
+    },
+    "space-1": {
+      "type": "number",
+      "value": 8
+    },
+    "space-2": {
+      "type": "number",
+      "value": 12
+    },
+    "space-3": {
+      "type": "number",
+      "value": 16
+    },
+    "space-4": {
+      "type": "number",
+      "value": 20
+    },
+    "space-5": {
+      "type": "number",
+      "value": 24
+    }
+  },
+  "fonts": [
+    {
+      "name": "Microsoft YaHei",
+      "url": "微软雅黑.ttf"
+    }
+  ]
+}

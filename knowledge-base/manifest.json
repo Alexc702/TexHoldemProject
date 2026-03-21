@@ -1,0 +1,56 @@
+{
+  "kb_version": "v1.0.0",
+  "updated_at": "2026-03-21T06:35:39Z",
+  "collections": [
+    {
+      "name": "spots",
+      "schema": "schemas/spot.schema.json",
+      "path": "data/spots/spots.v1.json"
+    },
+    {
+      "name": "board_classes",
+      "schema": "schemas/board_class.schema.json",
+      "path": "data/board_classes/board_classes.v1.json"
+    },
+    {
+      "name": "hand_buckets",
+      "schema": "schemas/hand_bucket.schema.json",
+      "path": "data/hand_buckets/hand_buckets.v1.json"
+    },
+    {
+      "name": "opponents",
+      "schema": "schemas/opponent_type.schema.json",
+      "path": "data/opponents/opponents.v1.json"
+    },
+    {
+      "name": "strategy_rules",
+      "schema": "schemas/strategy_rule.schema.json",
+      "path": "data/strategy_rules/strategy_rules.v1.json"
+    },
+    {
+      "name": "exploit_rules",
+      "schema": "schemas/exploit_rule.schema.json",
+      "path": "data/exploit_rules/exploit_rules.v1.json"
+    },
+    {
+      "name": "leaks",
+      "schema": "schemas/leak.schema.json",
+      "path": "data/leaks/leaks.v1.json"
+    },
+    {
+      "name": "narratives",
+      "schema": "schemas/narrative_template.schema.json",
+      "path": "data/narratives/narratives.v1.json"
+    },
+    {
+      "name": "reminders",
+      "schema": "schemas/reminder_template.schema.json",
+      "path": "data/reminders/reminders.v1.json"
+    },
+    {
+      "name": "scenarios",
+      "schema": "schemas/scenario.schema.json",
+      "path": "data/scenarios/scenarios.v1.json"
+    }
+  ]
+}

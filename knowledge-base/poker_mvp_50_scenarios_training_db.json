@@ -1,0 +1,2757 @@
+{
+  "schema_version": "1.0",
+  "product_scope": "MVP training + pre-session reminder + post-session review",
+  "scenario_count": 50,
+  "fields": {
+    "scenario_id": "唯一ID",
+    "title": "场景标题",
+    "theme": "训练主题",
+    "difficulty": "难度",
+    "stage": "适用阶段",
+    "tags": "场景标签",
+    "setup": "牌局设定/上下文",
+    "question": {
+      "prompt": "题面",
+      "options": "选项数组",
+      "correct_option_id": "正确答案ID"
+    },
+    "feedback": {
+      "correct": {
+        "summary": "答对反馈",
+        "coach_translation": "桌边翻译"
+      },
+      "incorrect": "错误答案反馈映射"
+    },
+    "leak_tags": "可沉淀的 leak 标签",
+    "reminder_seed": "可用于生成上桌提醒的文案种子"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "MVP-F-CBET-001",
+      "title": "A72彩虹面的小注持续下注",
+      "theme": "什么时候可以放心开一枪",
+      "difficulty": "low",
+      "stage": "首轮训练",
+      "tags": [
+        "BTN_vs_BB",
+        "SRP",
+        "Flop",
+        "HighCardDry",
+        "RangeAdvantageHero",
+        "CBetBasic"
+      ],
+      "setup": {
+        "positions": "Hero BTN vs Villain BB",
+        "preflop": "Hero open, BB call",
+        "board": "A♣ 7♦ 2♠",
+        "pot": "small"
+      },
+      "question": {
+        "prompt": "你在按钮位开局加注，大盲跟注。翻牌 A♣ 7♦ 2♠，轮到你行动。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注持续下注"
+          },
+          {
+            "id": "C",
+            "label": "大注持续下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注持续下注。高张干燥面通常更有利于前位加注者范围，小注就足够给大量没击中的牌施压。",
+          "coach_translation": "这种面一般就是你先轻轻开一枪最舒服的地方，不需要打太大。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "这里过于被动，放弃了便宜施压和直接拿下小池的机会。",
+            "fix": "高张干燥面先考虑小注拿主动，而不是默认放弃。"
+          },
+          "C": {
+            "why_wrong": "思路方向对，但尺度过大。你不需要用大注把简单 spot 打复杂。",
+            "fix": "记住：好打的面通常更适合小注，而不是猛轰。 "
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedEasyCBet",
+        "TooPassiveOnDryAceHigh"
+      ],
+      "reminder_seed": "高张干燥面，通常更适合你先用小注拿主动。"
+    },
+    {
+      "scenario_id": "MVP-F-CBET-002",
+      "title": "K83彩虹面别打太大",
+      "theme": "什么时候可以放心开一枪",
+      "difficulty": "low",
+      "stage": "首轮训练后",
+      "tags": [
+        "CO_vs_BB",
+        "SRP",
+        "Flop",
+        "HighCardDry",
+        "SizingBasic"
+      ],
+      "setup": {
+        "positions": "Hero CO vs Villain BB",
+        "preflop": "Hero open, BB call",
+        "board": "K♠ 8♥ 3♦",
+        "pot": "small"
+      },
+      "question": {
+        "prompt": "你在 CO 开局加注，大盲跟注。翻牌 K♠ 8♥ 3♦ 彩虹。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注持续下注"
+          },
+          {
+            "id": "C",
+            "label": "大注持续下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注持续下注。你通常有范围优势，但不需要很大下注就能拿到足够压力。",
+          "coach_translation": "好打的面，不等于要用力打；轻轻压就够了。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你错过了一个很自然的小池施压机会。",
+            "fix": "高张干燥面优先想的是小注延续主动。"
+          },
+          "C": {
+            "why_wrong": "大注在这里常常是用力过猛。",
+            "fix": "干燥高张面更多是轻压，不是重锤。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverbetDryBoards",
+        "MissedSimplePressure"
+      ],
+      "reminder_seed": "干燥高张面可以多开枪，但通常不需要打太大。"
+    },
+    {
+      "scenario_id": "MVP-F-CBET-003",
+      "title": "976两同花别自动开枪",
+      "theme": "什么时候别乱bluff",
+      "difficulty": "medium",
+      "stage": "首轮训练",
+      "tags": [
+        "BTN_vs_BB",
+        "SRP",
+        "Flop",
+        "LowConnected",
+        "WetBoard",
+        "BadAutoCBet"
+      ],
+      "setup": {
+        "positions": "Hero BTN vs Villain BB",
+        "preflop": "Hero open, BB call",
+        "board": "9♠ 7♠ 6♦",
+        "pot": "small"
+      },
+      "question": {
+        "prompt": "你在按钮位加注，大盲跟注。翻牌 9♠ 7♠ 6♦，轮到你行动。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注持续下注"
+          },
+          {
+            "id": "C",
+            "label": "大注持续下注"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更多 check。低张连张湿润面更容易击中防守方范围，不适合机械式持续下注。",
+          "coach_translation": "这种面别老想着“我先加注我就该打”，这里很多时候该慢下来。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你把高张干燥面的打法机械搬过来了。",
+            "fix": "先看牌面是否更偏向防守方，再决定要不要开枪。"
+          },
+          "C": {
+            "why_wrong": "这不仅错在下注，还错在把本来危险的面打成大池。",
+            "fix": "低张湿润面先学会踩刹车。"
+          }
+        }
+      },
+      "leak_tags": [
+        "AutoCBetOnBadBoards",
+        "OverbluffWetFlops"
+      ],
+      "reminder_seed": "低张连张湿润面，别像 A72 那样随便持续下注。"
+    },
+    {
+      "scenario_id": "MVP-F-CBET-004",
+      "title": "Q55成对干燥面的小注",
+      "theme": "什么时候可以放心开一枪",
+      "difficulty": "low",
+      "stage": "首轮训练后",
+      "tags": [
+        "BTN_vs_BB",
+        "SRP",
+        "Flop",
+        "PairedBoard",
+        "DryBoard"
+      ],
+      "setup": {
+        "positions": "Hero BTN vs Villain BB",
+        "preflop": "Hero open, BB call",
+        "board": "Q♦ 5♠ 5♣",
+        "pot": "small"
+      },
+      "question": {
+        "prompt": "你按钮位加注，大盲跟注。翻牌 Q♦ 5♠ 5♣。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注持续下注"
+          },
+          {
+            "id": "C",
+            "label": "大注持续下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注。成对且偏干燥的牌面，前位加注者通常更容易拿到主动。",
+          "coach_translation": "这种成对小牌面，很多时候是你轻松拿主动权的 spot。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一个原本很好拿的小池让回去了。",
+            "fix": "成对偏干燥牌面，多想想小注施压。"
+          },
+          "C": {
+            "why_wrong": "方向对，但尺度偏大。",
+            "fix": "这类面通常是轻压，不需要重锤。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedPairedBoardCBet",
+        "PoorSizingDryPaired"
+      ],
+      "reminder_seed": "成对偏干燥牌面，很多时候可以用小注稳定拿主动。"
+    },
+    {
+      "scenario_id": "MVP-T-EXP-001",
+      "title": "对跟注站别硬补第二枪",
+      "theme": "面对爱跟注的对手怎么少送钱",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "TurnBarrel",
+        "CallingStation",
+        "Exploit",
+        "OverbluffPrevention"
+      ],
+      "setup": {
+        "positions": "Hero BTN vs Villain BB",
+        "villain_type": "calling_station",
+        "preflop": "Hero open, BB call",
+        "flop": "K♣ 8♦ 3♠",
+        "flop_action": "Hero小注, BB call",
+        "turn": "2♥"
+      },
+      "question": {
+        "prompt": "对手是明显爱跟注的类型。你翻牌在 K♣ 8♦ 3♠ 小注后被跟，turn 来 2♥。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注继续 bluff"
+          },
+          {
+            "id": "C",
+            "label": "大注继续 bluff"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐 check。对爱跟注的对手，翻牌没打走且 turn 没明显变化时，继续 bluff 往往不划算。",
+          "coach_translation": "他翻牌都不走了，这张 turn 又没吓到谁，别为了把人打跑继续送钱。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你延续了一个成功率偏低的 bluff 计划。",
+            "fix": "对跟注站，一枪没打走且 turn 空白时，多学会停手。"
+          },
+          "C": {
+            "why_wrong": "这是最贵的一种错：对象错了，尺度还放大了。",
+            "fix": "记住：对爱跟的人，少 bluff 本身就是赚钱。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverbluffVsStation",
+        "BadTurnBarrel"
+      ],
+      "reminder_seed": "对跟注多的人，一枪没打走，第二枪别乱补。"
+    },
+    {
+      "scenario_id": "MVP-F-EXP-002",
+      "title": "对跟注站的强牌敢打大",
+      "theme": "面对爱跟注的对手怎么少送钱",
+      "difficulty": "low",
+      "stage": "Exploit入门",
+      "tags": [
+        "ValueBet",
+        "CallingStation",
+        "Exploit"
+      ],
+      "setup": {
+        "positions": "Hero CO vs Villain BB",
+        "villain_type": "calling_station",
+        "hero_hand": "AK",
+        "preflop": "Hero open, BB call",
+        "board": "A♦ 9♣ 4♠"
+      },
+      "question": {
+        "prompt": "对手是明显爱跟注的类型。你在 A♦ 9♣ 4♠ 击中顶对顶踢脚。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注价值下注"
+          },
+          {
+            "id": "C",
+            "label": "大注价值下注"
+          }
+        ],
+        "correct_option_id": "C"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐大注价值下注。对爱跟的人，强牌不该太客气。",
+          "coach_translation": "他喜欢跟，那你有好牌就别客气，能收多少先收多少。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一个现成赚钱 spot 放掉了。",
+            "fix": "对跟注站，有牌优先想的是多收价值。"
+          },
+          "B": {
+            "why_wrong": "不是完全错，但太保守。",
+            "fix": "面对愿意继续的对手，强牌价值可以打得更满。"
+          }
+        }
+      },
+      "leak_tags": [
+        "UnderValueVsStation"
+      ],
+      "reminder_seed": "对爱跟注的人，少 bluff 的同时，记得把强牌价值打满。"
+    },
+    {
+      "scenario_id": "MVP-F-DEF-001",
+      "title": "面对小注别过度弃牌",
+      "theme": "别被轻易偷池",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "FacingSmallBet",
+        "OverfoldPrevention",
+        "FlopDefense"
+      ],
+      "setup": {
+        "positions": "Hero BB vs Villain BTN",
+        "preflop": "BTN open, Hero defend",
+        "board": "J♣ 8♦ 2♠",
+        "villain_action": "BTN小注",
+        "hero_hand_type": "弱击中/后门潜力"
+      },
+      "question": {
+        "prompt": "你在大盲防守后，翻牌 J♣ 8♦ 2♠，对手只打很小。你手里有一点后门和弱击中。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。面对很小下注，你有足够价格继续看一张。",
+          "coach_translation": "对手只是轻轻碰一下，不代表你就必须赶紧跑。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你对小注防守过度不足。",
+            "fix": "看到很小下注时，先问自己是不是在“太快认输”。"
+          },
+          "C": {
+            "why_wrong": "这里没必要把一个普通防守 spot 升级成高波动 spot。",
+            "fix": "先把“该继续就继续”学稳，再谈进攻。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldVsSmallBet"
+      ],
+      "reminder_seed": "对手只是小注试探时，别总把还可以继续的牌丢掉。"
+    },
+    {
+      "scenario_id": "MVP-T-CBET-001",
+      "title": "空白turn不一定要补第二枪",
+      "theme": "什么时候别乱bluff",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "TurnBarrel",
+        "BlankTurn",
+        "Discipline"
+      ],
+      "setup": {
+        "positions": "Hero CO vs Villain BB",
+        "preflop": "Hero open, BB call",
+        "flop": "Q♠ 7♦ 3♣",
+        "flop_action": "Hero小注, BB call",
+        "turn": "2♦"
+      },
+      "question": {
+        "prompt": "你在 Q♠ 7♦ 3♣ 翻牌小注被跟，turn 来 2♦。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注继续"
+          },
+          {
+            "id": "C",
+            "label": "大注继续"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐 check。空白 turn 没有明显改善你的故事或施压质量，不必硬补第二枪。",
+          "coach_translation": "不是所有第二枪都值得补，很多 turn 什么也没改变。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你延续了“翻牌都打了，所以 turn 也得打”的机械思维。",
+            "fix": "turn 先看有没有新理由，而不是自动继续。"
+          },
+          "C": {
+            "why_wrong": "不仅继续了，而且把一个普通过牌 spot 打成高成本 bluff。",
+            "fix": "无明显变化的 turn，优先学会停手。"
+          }
+        }
+      },
+      "leak_tags": [
+        "AutoDoubleBarrel",
+        "TurnOverbluff"
+      ],
+      "reminder_seed": "翻牌打一枪后，如果 turn 没明显帮你，别硬补第二枪。"
+    },
+    {
+      "scenario_id": "MVP-F-EXP-003",
+      "title": "对激进玩家边缘牌控池",
+      "theme": "针对不同对手调整",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "ManiacOpponent",
+        "MediumStrength",
+        "PotControl"
+      ],
+      "setup": {
+        "villain_type": "aggressive",
+        "hero_hand_type": "中等一对",
+        "street": "flop",
+        "board_texture": "偏干"
+      },
+      "question": {
+        "prompt": "对手是喜欢乱打、喜欢反击的激进玩家。你在翻牌拿到中等强度一对。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check / 控制"
+          },
+          {
+            "id": "B",
+            "label": "小注保护/价值"
+          },
+          {
+            "id": "C",
+            "label": "大注把池子做大"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐控制。对会主动犯错的对手，你不必每次都抢着自己把锅烧大。",
+          "coach_translation": "遇到爱乱来的人，别总急着自己把池子打大。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "不一定完全错，但常常会错过让对手后续犯错的空间。",
+            "fix": "激进对手前，边缘牌多考虑控池。"
+          },
+          "C": {
+            "why_wrong": "这是典型把中等牌力玩过头。",
+            "fix": "先学会不把边缘牌主动升级成大池。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverplayMediumHands",
+        "NoPotControlVsAggro"
+      ],
+      "reminder_seed": "遇到爱乱打的人，边缘牌别急着自己把底池撑大。"
+    },
+    {
+      "scenario_id": "MVP-F-DRAW-001",
+      "title": "强同花听牌别一看没成就认输",
+      "theme": "别过度保守",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "DrawHand",
+        "FacingSmallBet",
+        "PassiveLeak"
+      ],
+      "setup": {
+        "positions": "Hero BB vs Villain BTN",
+        "hero_hand_type": "nut flush draw",
+        "villain_action": "小注"
+      },
+      "question": {
+        "prompt": "你在翻牌拿到强同花听牌，面对对手小注。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。强听牌不是垃圾牌，面对小注尤其不该轻易放掉。",
+          "coach_translation": "有这么强的听牌，别一看没成就认输。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一手很有未来潜力的牌过早放弃了。",
+            "fix": "先分清“没成牌”和“没价值”不是一回事。"
+          },
+          "C": {
+            "why_wrong": "raise 不是完全不行，但对 MVP 基础训练来说，更优先练会自然继续。",
+            "fix": "先把强听牌的继续逻辑练稳。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldStrongDraws"
+      ],
+      "reminder_seed": "强听牌别因为“还没成”就轻易放弃。"
+    },
+    {
+      "scenario_id": "MVP-F-VALUE-001",
+      "title": "顶对弱踢脚也别老怕",
+      "theme": "别漏掉简单价值",
+      "difficulty": "low",
+      "stage": "基础提升",
+      "tags": [
+        "TopPairWeakKicker",
+        "ValueBasic"
+      ],
+      "setup": {
+        "street": "flop",
+        "board_texture": "高张干燥",
+        "hero_hand_type": "顶对弱踢脚"
+      },
+      "question": {
+        "prompt": "翻牌是高张干燥面，你拿到顶对但踢脚一般。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注价值下注"
+          },
+          {
+            "id": "C",
+            "label": "大注价值下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注拿价值。很多更差牌仍会继续，不是只有怪物牌才值得下注。",
+          "coach_translation": "有不少更差牌会陪你走一段，别自己把价值省没了。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你过度害怕被反超，结果把现成价值让掉。",
+            "fix": "中上强度牌很多时候需要主动去收一口。"
+          },
+          "C": {
+            "why_wrong": "方向对，但常会让更差牌更容易跑掉。",
+            "fix": "中等强度价值牌更适合稳一点收。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedThinValue",
+        "TooScaredToValueBet"
+      ],
+      "reminder_seed": "不是只有怪物牌才能下注，很多中上强度牌也该收价值。"
+    },
+    {
+      "scenario_id": "MVP-F-BLUFF-001",
+      "title": "低张湿润面空气牌少逞强",
+      "theme": "什么时候别乱bluff",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "AirHand",
+        "WetBoard",
+        "FlopBluffPrevention"
+      ],
+      "setup": {
+        "preflop": "Hero open, BB call",
+        "board": "8♥ 7♥ 5♣",
+        "hero_hand_type": "基本没击中"
+      },
+      "question": {
+        "prompt": "你翻前加注后在 8♥ 7♥ 5♣ 几乎没击中。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注 bluff"
+          },
+          {
+            "id": "C",
+            "label": "大注 bluff"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐 check。低张湿润面不适合拿空气牌高频强行施压。",
+          "coach_translation": "这种面上拿空气硬讲故事，成功率通常没你想得高。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你选的是一个成功率偏低的 bluff 环境。",
+            "fix": "看到低张湿润面，先降低“自动开枪”冲动。"
+          },
+          "C": {
+            "why_wrong": "这里大注是把最不适合 bluff 的 spot 打到最贵。",
+            "fix": "别在动态面拿空气牌逞强。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverbluffDynamicFlops"
+      ],
+      "reminder_seed": "低张湿润面上，空气牌别老想着把人直接打跑。"
+    },
+    {
+      "scenario_id": "MVP-T-VALUE-001",
+      "title": "Turn成牌别又打得太小",
+      "theme": "面对爱跟注的对手怎么少送钱",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "TurnValue",
+        "StationExploit"
+      ],
+      "setup": {
+        "villain_type": "calling_station",
+        "line": "Hero flop有强听牌 turn成牌"
+      },
+      "question": {
+        "prompt": "对手爱跟注。你翻牌有强听牌，turn 真正成牌了。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check"
+          },
+          {
+            "id": "B",
+            "label": "小注价值下注"
+          },
+          {
+            "id": "C",
+            "label": "大注价值下注"
+          }
+        ],
+        "correct_option_id": "C"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更大价值下注。对愿意继续的对手，turn 成强牌别打得太保守。",
+          "coach_translation": "终于中了，就别又客气得像怕他走。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一个该收费的窗口白白浪费了。",
+            "fix": "成牌后优先想的是谁会继续、能收多少。"
+          },
+          "B": {
+            "why_wrong": "不是完全错，但偏保守。",
+            "fix": "对跟注站成牌后，多想“收满”，少想“别吓跑”。"
+          }
+        }
+      },
+      "leak_tags": [
+        "UnderbetMadeHands",
+        "MissedValueVsStation"
+      ],
+      "reminder_seed": "真成牌时要敢收钱，别一边怕人走一边错过价值。"
+    },
+    {
+      "scenario_id": "MVP-F-EXP-004",
+      "title": "对很紧的人小池可以多偷",
+      "theme": "针对不同对手调整",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "NitOpponent",
+        "SmallPotSteal"
+      ],
+      "setup": {
+        "villain_type": "nit",
+        "street": "flop",
+        "board_texture": "高张干燥或中等偏干"
+      },
+      "question": {
+        "prompt": "对手明显偏紧、偏被动。翻牌他面对压力时常常不舒服。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back / 放弃"
+          },
+          {
+            "id": "B",
+            "label": "小注施压"
+          },
+          {
+            "id": "C",
+            "label": "大注施压"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐主动小注。面对偏紧对手，很多不大的池子你可以更轻松拿下。",
+          "coach_translation": "碰到容易“没谱就放”的人，轻轻施压很多时候就够了。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你错过了一个明显的人群 exploit 点。",
+            "fix": "对偏紧的人，小池子别太客气。"
+          },
+          "C": {
+            "why_wrong": "施压方向对，但尺度过大，没必要。",
+            "fix": "对容易退缩的对手，多用轻压而不是重锤。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedExploitVsNit"
+      ],
+      "reminder_seed": "遇到很紧的人，小池子别太客气。"
+    },
+    {
+      "scenario_id": "MVP-R-VALUE-001",
+      "title": "中等顶对别老三条街打到底",
+      "theme": "别把中等牌打过头",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "RiverValueThin",
+        "MediumStrengthHand"
+      ],
+      "setup": {
+        "hero_hand_type": "顶对中踢脚",
+        "line": "已连打两条街",
+        "river": "对手仍然在"
+      },
+      "question": {
+        "prompt": "你已经连打两条街，river 对手还在，你只有中等顶对。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "再打一枪收价值"
+          },
+          {
+            "id": "B",
+            "label": "Check"
+          },
+          {
+            "id": "C",
+            "label": "大注逼他支付"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更多控制。到 river 还能继续的范围通常更结实，不是所有还领先的牌都适合再榨一条街。",
+          "coach_translation": "别把“可能还领先”自动翻译成“必须再拿一条街”。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你对 river 继续范围估计得太乐观。",
+            "fix": "river 时先想：更差牌还会不会继续？"
+          },
+          "C": {
+            "why_wrong": "这是把中等牌力打成过度价值。",
+            "fix": "中等强度牌别老想三枪收到底。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OvervalueMediumHands"
+      ],
+      "reminder_seed": "中等强度牌别老想三条街收到底。"
+    },
+    {
+      "scenario_id": "MVP-R-DEF-001",
+      "title": "被动玩家river突然发力别迷恋抓诈唬",
+      "theme": "别做太多英雄跟注",
+      "difficulty": "medium",
+      "stage": "赛后复盘重点",
+      "tags": [
+        "RiverFacingBigBet",
+        "PassivePlayer",
+        "HeroCallPrevention"
+      ],
+      "setup": {
+        "villain_type": "passive",
+        "river_action": "突然大额下注",
+        "hero_hand_type": "边缘 bluff-catcher"
+      },
+      "question": {
+        "prompt": "对手前面一直偏被动，river 突然打很大。你只有边缘 bluff-catcher。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 抓诈唬"
+          },
+          {
+            "id": "C",
+            "label": "Raise 反制"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。面对平时偏被动的对手，river 突然大动作时，不要太迷恋“抓诈唬”。",
+          "coach_translation": "平时不说话的人，最后突然拍桌子，很多时候真不是吓你。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你高估了对手的 bluff 频率。",
+            "fix": "先看人群倾向，再决定要不要英雄跟。"
+          },
+          "C": {
+            "why_wrong": "这是把本来就边缘的 bluff-catch spot 进一步放大风险。",
+            "fix": "边缘 bluff-catcher 通常只有弃或跟，不该升级成反击。"
+          }
+        }
+      },
+      "leak_tags": [
+        "HeroCallTooMuch",
+        "MisreadPassiveRiverAggression"
+      ],
+      "reminder_seed": "被动玩家河牌突然发力时，少一点“他肯定在演”。"
+    },
+    {
+      "scenario_id": "MVP-F-IP-001",
+      "title": "有位置有后门别太快投降",
+      "theme": "别过度保守",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "PositionAdvantage",
+        "BackdoorEquity"
+      ],
+      "setup": {
+        "positions": "Hero IP",
+        "villain_action": "小注 c-bet",
+        "hero_hand_type": "有后门同花/顺子潜力"
+      },
+      "question": {
+        "prompt": "你在位置上，手里没成牌，但有后门潜力，对手只打小。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。位置、后门潜力和小注价格，让这不是一手必须立刻放弃的牌。",
+          "coach_translation": "不是非得已经成牌，才配继续。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把位置和后门价值都低估了。",
+            "fix": "有位置、有后门、价格又便宜时，别太快认输。"
+          },
+          "C": {
+            "why_wrong": "过于积极，不适合作为基础默认打法。",
+            "fix": "先把舒服的继续 spot 练稳。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldWithEquity"
+      ],
+      "reminder_seed": "有位置、有后门、对手又只打小，别太快认输。"
+    },
+    {
+      "scenario_id": "MVP-F-MIND-001",
+      "title": "翻前主动权不是免死金牌",
+      "theme": "什么时候别乱bluff",
+      "difficulty": "low",
+      "stage": "首轮训练",
+      "tags": [
+        "ConceptCorrection",
+        "PreflopAggressorNotAutoBet"
+      ],
+      "setup": {
+        "role": "preflop aggressor",
+        "board_texture": "低张湿润面"
+      },
+      "question": {
+        "prompt": "你是翻前加注者，但翻牌是明显低张湿润面。最推荐的思路是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "先 check，别自动 c-bet"
+          },
+          {
+            "id": "B",
+            "label": "小注自动持续下注"
+          },
+          {
+            "id": "C",
+            "label": "大注抢主动"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐 check。翻前主动权不是翻后必须持续开火的通行证。",
+          "coach_translation": "“我翻前加注了”不是一张能盖过牌面的通行证。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你把身份当成了下注理由。",
+            "fix": "先看牌面，再看谁更适合施压。"
+          },
+          "C": {
+            "why_wrong": "这是把错误的出发点再放大。",
+            "fix": "主动权不等于每次都要开火。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MechanicalCBet"
+      ],
+      "reminder_seed": "先看牌面，再决定要不要打，不要只看谁翻前加注。"
+    },
+    {
+      "scenario_id": "MVP-T-EXP-005",
+      "title": "对紧对手 scare card turn 可以更敢压",
+      "theme": "针对不同对手调整",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "TurnScareCard",
+        "NitOpponent",
+        "ExploitBarrel"
+      ],
+      "setup": {
+        "villain_type": "nit",
+        "line": "flop被跟",
+        "turn": "A/K scare card"
+      },
+      "question": {
+        "prompt": "对手偏紧。你翻牌下注被跟，turn 来了一张明显 scare card（如 A/K）。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 放弃"
+          },
+          {
+            "id": "B",
+            "label": "继续施压"
+          },
+          {
+            "id": "C",
+            "label": "过牌后再看 river"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续施压。对容易退缩的对手，这类高张 turn 很适合你代表强范围。",
+          "coach_translation": "怕的人看到更吓人的牌，通常会更怕。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你放过了一个典型 scare-card exploit spot。",
+            "fix": "对偏紧对手，turn 高张 scare card 要更敢继续。"
+          },
+          "C": {
+            "why_wrong": "太被动，错过了这张牌最有价值的施压时机。",
+            "fix": "有些牌转过来，就是让你继续讲故事的。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedScareCardBarrel"
+      ],
+      "reminder_seed": "对容易弃牌的人，turn 出 scare card 时可以更敢开第二枪。"
+    },
+    {
+      "scenario_id": "MVP-T-MIX-001",
+      "title": "有摊牌价值的牌别老打成bluff",
+      "theme": "什么时候别乱bluff",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "ShowdownValue",
+        "BluffPrevention"
+      ],
+      "setup": {
+        "hero_hand_type": "A high / 第三对 / 弱一对",
+        "villain_range": "不太容易全弃"
+      },
+      "question": {
+        "prompt": "你手里已经有一点摊牌价值，但对手范围也不是那么容易全弃。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 控制"
+          },
+          {
+            "id": "B",
+            "label": "小注把它打成 bluff"
+          },
+          {
+            "id": "C",
+            "label": "大注逼弃牌"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐控制。有一定摊牌价值的牌，并不总适合主动把自己变成 bluff。",
+          "coach_translation": "有时候你不是“要么赢很多，要么现在就抢”，安静去摊牌更值。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你把本来可能赢摊牌的牌主动改造成了不必要 bluff。",
+            "fix": "有 SDV 的牌，先问自己是不是有必要下注。"
+          },
+          "C": {
+            "why_wrong": "这是把轻微偏差打成高成本错误。",
+            "fix": "别老把还能摊牌的牌加工成 bluff。"
+          }
+        }
+      },
+      "leak_tags": [
+        "TurningSDVIntoBluff"
+      ],
+      "reminder_seed": "有摊牌价值的牌，别老想把它再加工成 bluff。"
+    },
+    {
+      "scenario_id": "MVP-F-STAB-001",
+      "title": "对手示弱后顺手拿小池",
+      "theme": "小池偷取",
+      "difficulty": "low",
+      "stage": "基础提升",
+      "tags": [
+        "StabVsMissedCBet",
+        "DelayedAggression"
+      ],
+      "setup": {
+        "positions": "Hero IP",
+        "villain_action": "flop check",
+        "board_texture": "高张干燥"
+      },
+      "question": {
+        "prompt": "对手在较干燥的高张面翻牌直接 check 给你。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back"
+          },
+          {
+            "id": "B",
+            "label": "小注 stab"
+          },
+          {
+            "id": "C",
+            "label": "大注 stab"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注。对手已经示弱，这类牌面很适合你轻松拿池。",
+          "coach_translation": "对手都先松手了，很多时候你轻轻一拿就行。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把现成小池让回去了。",
+            "fix": "对手示弱且牌面适合时，先考虑轻压拿池。"
+          },
+          "C": {
+            "why_wrong": "方向对，但没必要用大注把简单 spot 打重。",
+            "fix": "偷小池先用轻压。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedStabSpot"
+      ],
+      "reminder_seed": "对手一旦在合适牌面先示弱，别总把现成小池让回去。"
+    },
+    {
+      "scenario_id": "MVP-F-EXP-006",
+      "title": "对爱跟的人少表演",
+      "theme": "面对爱跟注的对手怎么少送钱",
+      "difficulty": "low",
+      "stage": "Exploit入门",
+      "tags": [
+        "CallingStation",
+        "PopulationExploit"
+      ],
+      "setup": {
+        "villain_type": "calling_station",
+        "hero_hand_type": "中低强度/空气"
+      },
+      "question": {
+        "prompt": "面对一个会跟到底的对手，你手里只是中低强度甚至空气牌。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "减少 bluff，更多放弃"
+          },
+          {
+            "id": "B",
+            "label": "正常继续 bluff 保持平衡"
+          },
+          {
+            "id": "C",
+            "label": "大尺度 bluff 吓跑他"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐减少 bluff。面对会跟到底的人，少花活本身就是盈利调整。",
+          "coach_translation": "他不爱弃，你就别非得演给他看。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "MVP 目标不是打平衡，而是别在错误对象上浪费筹码。",
+            "fix": "先会 exploit，再谈平衡。"
+          },
+          "C": {
+            "why_wrong": "这是把最差目标对象上最差 bluff 放大。",
+            "fix": "对爱跟的人，技巧之一就是少表演。"
+          }
+        }
+      },
+      "leak_tags": [
+        "FancyPlayVsBadTarget"
+      ],
+      "reminder_seed": "对爱跟的人，最好的技巧有时就是少表演。"
+    },
+    {
+      "scenario_id": "MVP-R-MIND-001",
+      "title": "河牌不确定时少做大英雄",
+      "theme": "结果不重要，长期别送",
+      "difficulty": "medium",
+      "stage": "赛后复盘重点",
+      "tags": [
+        "RiverDiscipline",
+        "HeroCallPrevention"
+      ],
+      "setup": {
+        "hero_hand_type": "边缘 bluff-catcher",
+        "feeling": "很想抓一次诈唬"
+      },
+      "question": {
+        "prompt": "你在 river 没太大把握，只是有点想抓对手一次诈唬。最推荐的动作通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call，证明自己看懂了"
+          },
+          {
+            "id": "C",
+            "label": "Raise 反向施压"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。少做一次炫耀式 hero call，往往比抓对一次更赚钱。",
+          "coach_translation": "不确定时，少做大英雄，长期通常更赚。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你更多是在满足“想抓到一次”的情绪。",
+            "fix": "river 跟注前先问：我真有足够 bluff 来源吗？"
+          },
+          "C": {
+            "why_wrong": "本来就边缘的 spot，不适合进一步升级。",
+            "fix": "别把好奇心升级成更贵的动作。"
+          }
+        }
+      },
+      "leak_tags": [
+        "CuriosityCalls",
+        "RiverEgoCalls"
+      ],
+      "reminder_seed": "河牌不确定时，别让“他是不是在演”主导你的决定。"
+    },
+    {
+      "scenario_id": "MVP-F-VALUE-002",
+      "title": "overpair在危险面也要收费",
+      "theme": "别漏掉简单价值",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "Overpair",
+        "WetBoard",
+        "ValueProtection"
+      ],
+      "setup": {
+        "hero_hand_type": "overpair",
+        "board_texture": "带听牌湿润面"
+      },
+      "question": {
+        "prompt": "你在翻牌拿到 overpair，但牌面带很多听牌。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 控制"
+          },
+          {
+            "id": "B",
+            "label": "小注看看"
+          },
+          {
+            "id": "C",
+            "label": "较大价值下注"
+          }
+        ],
+        "correct_option_id": "C"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续价值下注。你的牌很强，而且很多听牌和次强牌都该为继续付费。",
+          "coach_translation": "有好牌别因为牌面有点吓人就变成只想免费看牌。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把该收费的牌打成了免费发牌。",
+            "fix": "危险牌面上的强牌，常常更该收费。"
+          },
+          "B": {
+            "why_wrong": "不是完全错，但往往收得不够。",
+            "fix": "有听牌有次强牌时，价值和保护都应该更主动。"
+          }
+        }
+      },
+      "leak_tags": [
+        "UnderprotectStrongHands",
+        "MissedWetBoardValue"
+      ],
+      "reminder_seed": "牌面危险不代表强牌就该躲，很多时候更该收费。"
+    },
+    {
+      "scenario_id": "MVP-F-DEF-002",
+      "title": "翻牌被check-raise边缘一对别硬顶",
+      "theme": "避免不必要硬拼",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "FacingCheckRaise",
+        "MediumPair"
+      ],
+      "setup": {
+        "villain_type": "普通/偏被动",
+        "hero_hand_type": "边缘一对"
+      },
+      "question": {
+        "prompt": "你翻牌 c-bet 后，被一个普通或偏被动对手 check-raise。你只有边缘一对。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 看看 turn"
+          },
+          {
+            "id": "C",
+            "label": "3-bet 反打"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。面对多数普通或偏被动玩家，翻牌 check-raise 往往比你想的更偏真。",
+          "coach_translation": "别把“我好像还有点牌”当成必须继续打到底的理由。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你高估了这种人群的翻牌 check-raise bluff 比例。",
+            "fix": "面对被动/普通玩家的突然强势，要更会认。"
+          },
+          "C": {
+            "why_wrong": "这是把一个原本该止损的 spot 升成对抗。",
+            "fix": "先学会放掉不该硬扛的一对。"
+          }
+        }
+      },
+      "leak_tags": [
+        "StickyVsFlopAggression"
+      ],
+      "reminder_seed": "翻牌被突然顶回来时，边缘牌别老想硬扛。"
+    },
+    {
+      "scenario_id": "MVP-T-STAB-001",
+      "title": "对手连续示弱turn可以接管",
+      "theme": "小池偷取",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "DelayedStab",
+        "Turn"
+      ],
+      "setup": {
+        "line": "Flop check-check, turn villain check",
+        "positions": "Hero IP"
+      },
+      "question": {
+        "prompt": "翻牌双方都过牌，turn 对手再次 check 给你。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "继续 check back"
+          },
+          {
+            "id": "B",
+            "label": "小到中等下注拿池"
+          },
+          {
+            "id": "C",
+            "label": "大注极化"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐主动拿池。对手连续两次示弱时，不要总把小池白白放掉。",
+          "coach_translation": "对手一路都没想拿这池子，很多时候你可以顺手接过来。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你忽略了连续示弱带来的弃牌率。",
+            "fix": "看到连续示弱，多想 delayed stab。"
+          },
+          "C": {
+            "why_wrong": "方向对，但尺度不需要那么重。",
+            "fix": "接管小池，先用舒服的中小尺度。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedDelayedStab"
+      ],
+      "reminder_seed": "对手连续两条街示弱时，小池子该拿就拿。"
+    },
+    {
+      "scenario_id": "MVP-F-DEF-003",
+      "title": "第二对对小注很多时候能继续",
+      "theme": "别过度弃牌",
+      "difficulty": "low",
+      "stage": "首轮后续",
+      "tags": [
+        "SecondPair",
+        "FacingSmallBet"
+      ],
+      "setup": {
+        "hero_hand_type": "第二对",
+        "villain_action": "小注 c-bet"
+      },
+      "question": {
+        "prompt": "你在翻牌拿到第二对，对手只打很小。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise 保护"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。第二对面对小注通常有足够理由看下一张。",
+          "coach_translation": "有点东西、价格又便宜，别急着自己把牌丢了。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你对中等牌力和小下注价格都估计得太保守。",
+            "fix": "面对小注，第二对很多时候远不到必须弃牌。"
+          },
+          "C": {
+            "why_wrong": "没必要把一个普通防守 spot 强行升级。",
+            "fix": "先练会舒服继续，而不是总想主动反击。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldMediumPairs"
+      ],
+      "reminder_seed": "面对小注时，第二对很多时候不是“马上弃牌”的牌。"
+    },
+    {
+      "scenario_id": "MVP-F-DRAW-002",
+      "title": "强combo draw可以更主动",
+      "theme": "别只会被动跟",
+      "difficulty": "medium",
+      "stage": "基础提升后段",
+      "tags": [
+        "ComboDraw",
+        "SemiBluff"
+      ],
+      "setup": {
+        "hero_hand_type": "强同花顺双重听牌",
+        "villain_action": "中小下注"
+      },
+      "question": {
+        "prompt": "你在翻牌拿到很强的 combo draw，面对对手中小下注。MVP 基础推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call / 继续"
+          },
+          {
+            "id": "C",
+            "label": "Raise 半诈唬"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "MVP 基础版先推荐继续而非弃牌。强 combo draw 至少绝不该轻易放弃。",
+          "coach_translation": "这种大听牌不是只能缩着挨打，它本身就是很能继续的牌。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一手未来潜力极高的牌过早丢掉了。",
+            "fix": "先建立“强听牌至少能继续”的直觉。"
+          },
+          "C": {
+            "why_wrong": "在更进阶版本里可以成立，但 MVP 基础训练优先把继续逻辑练稳。",
+            "fix": "先学会识别强听牌不是弃牌。"
+          }
+        }
+      },
+      "leak_tags": [
+        "UnderAggressiveDraws",
+        "OverfoldComboDraws"
+      ],
+      "reminder_seed": "超强听牌不只是“看看下一张”，至少别轻易放弃。"
+    },
+    {
+      "scenario_id": "MVP-R-VALUE-002",
+      "title": "对被动对手river还能收一小口",
+      "theme": "别漏掉简单价值",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "RiverThinValue",
+        "PassiveOpponent"
+      ],
+      "setup": {
+        "villain_type": "passive",
+        "hero_hand_type": "明显领先的中上强度牌"
+      },
+      "question": {
+        "prompt": "river 对手偏被动，你手里是明显领先的中上强度牌。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back"
+          },
+          {
+            "id": "B",
+            "label": "小注收薄价值"
+          },
+          {
+            "id": "C",
+            "label": "大注逼他付费"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注收尾。对被动对手，你还有机会拿到薄价值。",
+          "coach_translation": "不是只会“强牌三枪或直接停”，很多时候最后还能再收一点。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你漏掉了对被动玩家常见的最后一口价值。",
+            "fix": "river 先想：有没有更差牌愿意被动付一小口？"
+          },
+          "C": {
+            "why_wrong": "尺度过大，容易让更差牌都退掉。",
+            "fix": "薄价值讲究的是让更差牌继续，不是把它们全吓跑。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedRiverThinValue"
+      ],
+      "reminder_seed": "河牌不是只有怕被反超，很多时候还能再收一点钱。"
+    },
+    {
+      "scenario_id": "MVP-R-DEF-002",
+      "title": "bluff-catcher好不好看对手会不会bluff",
+      "theme": "别做太多英雄跟注",
+      "difficulty": "medium",
+      "stage": "赛后复盘重点",
+      "tags": [
+        "BluffCatcher",
+        "PopulationExploit",
+        "RiverFoldDiscipline"
+      ],
+      "setup": {
+        "hero_hand_type": "bluff-catcher",
+        "villain_type": "总体少 bluff"
+      },
+      "question": {
+        "prompt": "你手里只是 bluff-catcher，而对手类型本来就不太会 bluff。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call，抓诈唬"
+          },
+          {
+            "id": "C",
+            "label": "Raise 反制 bluff"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。你的牌能赢的前提，是对手有足够 bluff，但这里并没有。",
+          "coach_translation": "bluff-catcher 好不好，不看你自己帅不帅，看对手会不会真 bluff。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你忽略了 bluff-catcher 最核心的前提：对手得真的会 bluff。",
+            "fix": "跟注前先问“他有多少诈唬”，而不是“我像不像能抓住”。"
+          },
+          "C": {
+            "why_wrong": "本来只是边缘 bluff-catch，却又往前迈了一步。",
+            "fix": "先分清什么时候连跟都不该跟。"
+          }
+        }
+      },
+      "leak_tags": [
+        "CallingWithoutBluffSource"
+      ],
+      "reminder_seed": "bluff-catcher 好不好，不看你自己帅不帅，看对手会不会真 bluff。"
+    },
+    {
+      "scenario_id": "MVP-F-MULTI-001",
+      "title": "多人池里A高张面没那么轻松",
+      "theme": "场景感修正",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "MultiwayPot",
+        "FlopCBetAdjustment"
+      ],
+      "setup": {
+        "preflop": "Hero open, 两人跟注",
+        "board": "A♠ 7♣ 2♦"
+      },
+      "question": {
+        "prompt": "你翻前加注后有两个人跟注。翻牌 A♠ 7♣ 2♦。最推荐的思路是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "更谨慎，优先 check / 低频小注"
+          },
+          {
+            "id": "B",
+            "label": "像单挑一样稳定小注"
+          },
+          {
+            "id": "C",
+            "label": "大注强压多人"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更谨慎。多人底池里，不要把单挑时的轻松 c-bet 习惯直接搬过来。",
+          "coach_translation": "人一多，牌面再好看，也别自动以为都该让你拿。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你忽略了多人底池继续范围更扎实这个变化。",
+            "fix": "先分清单挑和多人池不是同一种压力环境。"
+          },
+          "C": {
+            "why_wrong": "多人池用大注硬压，成本高且对手总范围也更强。",
+            "fix": "多人池先收敛，不要放大。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverCBetMultiway"
+      ],
+      "reminder_seed": "多人底池里，很多“简单开枪点”都没那么简单。"
+    },
+    {
+      "scenario_id": "MVP-T-EXP-007",
+      "title": "有些人真正怕的是turn再被逼一次",
+      "theme": "针对不同对手调整",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "TurnPressure",
+        "WeakRecTendency"
+      ],
+      "setup": {
+        "villain_tendency": "flop先看看, turn容易收手",
+        "line": "flop跟注 turn再次面对压力"
+      },
+      "question": {
+        "prompt": "对手习惯翻牌先看一张，但 turn 面对继续压力经常软。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 放弃"
+          },
+          {
+            "id": "B",
+            "label": "继续施压"
+          },
+          {
+            "id": "C",
+            "label": "只在成牌时下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续压。面对 flop 容易“先看看”的对手，turn 往往才是更有效的施压点。",
+          "coach_translation": "有些人翻牌会看，但真正怕的是 turn 再被逼一次。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你错过了这个人群最明显的弃牌点。",
+            "fix": "先观察对手是“看一张派”还是“真愿意一路跟到底”。"
+          },
+          "C": {
+            "why_wrong": "过于保守，没利用人群倾向。",
+            "fix": "对特定人群，没成牌时也能盈利施压。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedTurnExploit"
+      ],
+      "reminder_seed": "有些对手翻牌会看，但真正怕的是 turn 再被逼一次。"
+    },
+    {
+      "scenario_id": "MVP-T-TRAP-001",
+      "title": "对激进玩家中等牌可保留其bluff空间",
+      "theme": "针对不同对手调整",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "AggroOpponent",
+        "BluffInducement"
+      ],
+      "setup": {
+        "villain_type": "aggressive",
+        "hero_hand_type": "中等偏上的一对"
+      },
+      "question": {
+        "prompt": "对手很爱主动开火。你拿到中等偏上的一对。最推荐的思路是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check / 控制，保留他后续 bluff 空间"
+          },
+          {
+            "id": "B",
+            "label": "主动小注抢先收一点"
+          },
+          {
+            "id": "C",
+            "label": "大注把牌局写死"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更多控制。对主动犯错型对手，很多中等强度牌不必自己把答案全写完。",
+          "coach_translation": "他爱自己开火时，你不用什么都抢着先做。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "不一定错，但常常把对手的 bluff 空间关掉了。",
+            "fix": "面对激进玩家，中等牌别总抢着自己出题。"
+          },
+          "C": {
+            "why_wrong": "你把边缘优势牌主动升级成大池压力。",
+            "fix": "保留对手犯错空间，有时比自己发力更值。"
+          }
+        }
+      },
+      "leak_tags": [
+        "NoInduceVsAggro",
+        "OverplayVsAggro"
+      ],
+      "reminder_seed": "遇到爱开火的人，中等牌别总急着自己先把牌局写死。"
+    },
+    {
+      "scenario_id": "MVP-R-BLUFF-001",
+      "title": "前面没铺好故事河牌别硬演",
+      "theme": "别乱bluff",
+      "difficulty": "medium",
+      "stage": "赛后复盘高频",
+      "tags": [
+        "RiverBluff",
+        "StoryInconsistency"
+      ],
+      "setup": {
+        "line": "前两街偏被动",
+        "river": "突然想大 bluff"
+      },
+      "question": {
+        "prompt": "你前两条街都没怎么表现强，river 却想突然大 bluff。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back / 放弃"
+          },
+          {
+            "id": "B",
+            "label": "小注试探 bluff"
+          },
+          {
+            "id": "C",
+            "label": "大注硬讲故事"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐放弃。前面没有铺好故事的 river 突击 bluff，通常只是把不甘心打包成下注。",
+          "coach_translation": "不是到了河牌觉得“只能这样了”就能把 bluff 变好。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "虽然成本小一点，但本质还是缺少前文支撑。",
+            "fix": "river bluff 也要看你前面有没有讲通。"
+          },
+          "C": {
+            "why_wrong": "这是最典型的“前面没铺垫，最后硬演”。",
+            "fix": "别把“快输了”当成 bluff 理由。"
+          }
+        }
+      },
+      "leak_tags": [
+        "DesperationBluff",
+        "IncoherentRiverStory"
+      ],
+      "reminder_seed": "别把“已经快输了”当成河牌 bluff 的理由。"
+    },
+    {
+      "scenario_id": "MVP-F-DEF-004",
+      "title": "对激进玩家反击不是都该怕",
+      "theme": "别过度保守",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "VsAggressiveRaise",
+        "TopPairContinue"
+      ],
+      "setup": {
+        "villain_type": "aggressive",
+        "hero_hand_type": "尚可继续的一对/顶对"
+      },
+      "question": {
+        "prompt": "你翻牌有一对，被一个明显激进的对手反击。最推荐的思路是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "直接 fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 继续观察"
+          },
+          {
+            "id": "C",
+            "label": "马上再顶回去"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续而不是立刻放弃。面对激进玩家，你不必把所有边缘压力都自动解释成“我完了”。",
+          "coach_translation": "对爱动手的人，不要把每次顶回来都当成绝对强牌。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把对激进玩家的更宽反击范围忽略了。",
+            "fix": "先看对手是不是那种会把局面搅浑的人。"
+          },
+          "C": {
+            "why_wrong": "又从一个边缘继续 spot 升级成大对抗。",
+            "fix": "先学会合理继续，不要动不动就大战。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldVsAggro"
+      ],
+      "reminder_seed": "对爱反打的人，别把每次顶回来都看得太重。"
+    },
+    {
+      "scenario_id": "MVP-F-DRAW-003",
+      "title": "弱draw价格不好别硬跟",
+      "theme": "避免不必要乱跟",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "WeakDraw",
+        "BadPrice"
+      ],
+      "setup": {
+        "hero_hand_type": "弱 gutshot / 弱后门",
+        "villain_action": "较大下注"
+      },
+      "question": {
+        "prompt": "你只有很弱的听牌，对手下注还不小。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 试试看"
+          },
+          {
+            "id": "C",
+            "label": "Raise 抢一把"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。这手听牌太弱，价格也不舒服，不值得继续幻想。",
+          "coach_translation": "不是只要沾点听牌边就值得陪到底。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你在为“也许会中”支付过高成本。",
+            "fix": "有点 draw 不等于必须继续，先看值不值。"
+          },
+          "C": {
+            "why_wrong": "这是把本来就不值继续的牌再升级成高波动。",
+            "fix": "弱 draw 先学会放。"
+          }
+        }
+      },
+      "leak_tags": [
+        "ChasingTooWide"
+      ],
+      "reminder_seed": "有点 draw 不等于必须继续，先看它值不值得。"
+    },
+    {
+      "scenario_id": "MVP-T-BLUFF-002",
+      "title": "scare card turn有时真能逼掉更差牌",
+      "theme": "什么时候可以继续施压",
+      "difficulty": "medium",
+      "stage": "基础提升后段",
+      "tags": [
+        "TurnScareCard",
+        "SemiBluffValueDenial"
+      ],
+      "setup": {
+        "line": "flop c-bet 被跟",
+        "turn": "高张 scare card",
+        "hero_hand_type": "有少量出路/阻断"
+      },
+      "question": {
+        "prompt": "你翻牌下注被跟，turn 来了一张明显 scare card，而且你还有一点出路或阻断。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 放弃"
+          },
+          {
+            "id": "B",
+            "label": "继续施压"
+          },
+          {
+            "id": "C",
+            "label": "只在成牌时下注"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续施压。这张 turn 改变了场上压迫感，很多对手会更难轻松继续。",
+          "coach_translation": "某些 turn 真的会让对手很多中等牌不舒服，你可以利用。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你错过了 scare-card barrel 的高质量环境。",
+            "fix": "turn 变化大时，别总按 flop 逻辑原地不动。"
+          },
+          "C": {
+            "why_wrong": "过于结果导向，忽略了 scare card 自身带来的弃牌率。",
+            "fix": "有些 turn 就是能让你继续讲故事。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissingGoodScareBarrels"
+      ],
+      "reminder_seed": "有些高张 turn 真能吓到人，别全都白白放过。"
+    },
+    {
+      "scenario_id": "MVP-T-OOP-001",
+      "title": "没位置边缘牌多控池",
+      "theme": "别把边缘牌玩大",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "OOP",
+        "PotControl"
+      ],
+      "setup": {
+        "positions": "Hero OOP",
+        "hero_hand_type": "中等牌力",
+        "street": "turn"
+      },
+      "question": {
+        "prompt": "你没位置，手里只是中等牌力。到了 turn，最推荐的思路通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 控制"
+          },
+          {
+            "id": "B",
+            "label": "小注先带节奏"
+          },
+          {
+            "id": "C",
+            "label": "大注主动做大池"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐控制。没位置时，中等牌力更需要谨慎管理底池。",
+          "coach_translation": "没位置还想边缘牌主导牌局，通常很容易把自己带沟里。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "主动领打会把原本还能控的池子变复杂。",
+            "fix": "没位置 + 边缘牌，先想控制而不是主导。"
+          },
+          "C": {
+            "why_wrong": "这是最典型的没位置把边缘牌玩大。",
+            "fix": "先学会 OOP 不卡手地控池。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverplayingOOP"
+      ],
+      "reminder_seed": "没位置时，边缘牌尽量别硬带大节奏。"
+    },
+    {
+      "scenario_id": "MVP-R-DEF-003",
+      "title": "别为了证明自己厉害而hero call",
+      "theme": "英雄跟注克制",
+      "difficulty": "medium",
+      "stage": "赛后复盘重点",
+      "tags": [
+        "RiverHeroCallMindset"
+      ],
+      "setup": {
+        "hero_hand_type": "边缘 bluff-catcher",
+        "emotion": "想证明自己看穿了"
+      },
+      "question": {
+        "prompt": "你在河牌更像是想证明自己看穿了对手，而不是有很强把握。最推荐的动作通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 证明自己没看错"
+          },
+          {
+            "id": "C",
+            "label": "Raise 直接压回去"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。这更像是在满足“我想抓他一次”，而不是在做高质量跟注。",
+          "coach_translation": "不是每次都要证明自己看穿了对方，很多时候最强的是收手。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "这是典型 ego call。",
+            "fix": "跟注前先问：我是因为信息充分，还是因为不想输面子？"
+          },
+          "C": {
+            "why_wrong": "情绪化升级，会让一次不确定判断变得更贵。",
+            "fix": "别把 ego 扩大成更大损失。"
+          }
+        }
+      },
+      "leak_tags": [
+        "EgoCalls"
+      ],
+      "reminder_seed": "河牌别为了证明自己厉害而付出昂贵学费。"
+    },
+    {
+      "scenario_id": "MVP-F-VALUE-003",
+      "title": "对手示弱后中等成牌可顺手收一点",
+      "theme": "别漏掉简单价值",
+      "difficulty": "low",
+      "stage": "首轮后续",
+      "tags": [
+        "DelayedValue",
+        "MediumMadeHand"
+      ],
+      "setup": {
+        "villain_action": "check to hero",
+        "hero_hand_type": "中等成牌",
+        "board_texture": "偏高张干燥"
+      },
+      "question": {
+        "prompt": "对手在合适牌面上 check 给你，你手里有中等成牌。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back"
+          },
+          {
+            "id": "B",
+            "label": "小注拿价值"
+          },
+          {
+            "id": "C",
+            "label": "大注逼次强牌"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐小注拿价值。对手示弱时，不要把现成价值白白跳过。",
+          "coach_translation": "对手都慢下来时，你很多“还不错的牌”可以顺手收点钱。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一个很自然的价值窗口让掉了。",
+            "fix": "中等成牌面对示弱，多想想小口收钱。"
+          },
+          "C": {
+            "why_wrong": "尺度过大，容易把能付的小牌都赶跑。",
+            "fix": "中等价值多用舒服的小注。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedDelayedValue"
+      ],
+      "reminder_seed": "对手一旦慢下来，你的中等成牌常常还能值一小口。"
+    },
+    {
+      "scenario_id": "MVP-R-BLUFF-002",
+      "title": "对手一路都在，河牌别靠意志力硬打",
+      "theme": "别乱bluff",
+      "difficulty": "medium",
+      "stage": "赛后复盘高频",
+      "tags": [
+        "RiverDesperationBluff",
+        "StationLikeLine"
+      ],
+      "setup": {
+        "line": "对手 flop/turn 都跟了",
+        "river": "空白/不利",
+        "hero_hand_type": "基本空气"
+      },
+      "question": {
+        "prompt": "对手 flop 和 turn 都跟了你，river 也没什么新变化，你基本空气。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 放弃"
+          },
+          {
+            "id": "B",
+            "label": "小注再试一下"
+          },
+          {
+            "id": "C",
+            "label": "大 bluff 最后搏一次"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐放弃。对手前两条街都在，河牌再突然硬逼，通常只是把希望下注成成本。",
+          "coach_translation": "对手前面都不怕，河牌忽然想靠意志力把他打走，通常不现实。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "本质问题没变，只是成本小一点。",
+            "fix": "对手一路都在时，先尊重他的继续意愿。"
+          },
+          "C": {
+            "why_wrong": "这是最典型的“最后搏一下”，而不是高质量 bluff。",
+            "fix": "别把不甘心包装成下注。"
+          }
+        }
+      },
+      "leak_tags": [
+        "TripleBarrelWishfulThinking"
+      ],
+      "reminder_seed": "对手一路都没走，河牌别总靠“也许这次能把他吓跑”。"
+    },
+    {
+      "scenario_id": "MVP-F-DRAW-004",
+      "title": "强顺听面对不大下注舒服继续",
+      "theme": "别过度保守",
+      "difficulty": "low",
+      "stage": "基础提升",
+      "tags": [
+        "OESD",
+        "ContinueVsBet"
+      ],
+      "setup": {
+        "hero_hand_type": "open-ended straight draw",
+        "villain_action": "不大下注"
+      },
+      "question": {
+        "prompt": "你在翻牌拿到两头顺听牌，对手下注不大。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise 全压迫"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。强顺子听牌面对不大压力时，本来就是很自然的继续牌。",
+          "coach_translation": "这种强听牌不是问题手，是还能继续玩的牌。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一手标准继续牌过早扔掉了。",
+            "fix": "强顺听 + 不大下注，优先想到继续。"
+          },
+          "C": {
+            "why_wrong": "进攻可以存在，但 MVP 先把标准继续练稳。",
+            "fix": "先别把每个强听牌都自动升级成大动作。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldOESD"
+      ],
+      "reminder_seed": "强顺听面对不大下注，通常不该轻易放弃。"
+    },
+    {
+      "scenario_id": "MVP-T-VALUE-002",
+      "title": "对被动玩家turn还能收一条",
+      "theme": "别漏掉价值",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "TurnValue",
+        "PassiveOpponent"
+      ],
+      "setup": {
+        "villain_type": "passive",
+        "hero_hand_type": "顶对弱踢脚"
+      },
+      "question": {
+        "prompt": "对手偏被动，你手里是顶对弱踢脚，到了 turn。最推荐的打法通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back"
+          },
+          {
+            "id": "B",
+            "label": "小到中等价值下注"
+          },
+          {
+            "id": "C",
+            "label": "大注极限榨值"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续拿价值。对被动且继续范围偏宽的对手，你这手牌经常还能收一条。",
+          "coach_translation": "不必等到超级强才敢继续收钱。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你对被动玩家过度保守，漏掉了 turn 的一条价值。",
+            "fix": "对被动对手，中上强度牌很多时候还能多收一条。"
+          },
+          "C": {
+            "why_wrong": "尺度过大，容易把本会继续的更差牌都赶掉。",
+            "fix": "收价值时也要考虑让更差牌舒服跟。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedTurnValue"
+      ],
+      "reminder_seed": "对被动玩家，中上强度牌很多时候还能多收一条街。"
+    },
+    {
+      "scenario_id": "MVP-F-DEF-005",
+      "title": "两高张加后门对极小注别太快丢",
+      "theme": "别过度弃牌",
+      "difficulty": "low",
+      "stage": "基础提升",
+      "tags": [
+        "TwoOvercards",
+        "BackdoorEquity",
+        "FacingTinyBet"
+      ],
+      "setup": {
+        "hero_hand_type": "两高张+后门",
+        "villain_action": "极小下注"
+      },
+      "question": {
+        "prompt": "你虽然没成牌，但有两高张和一点后门，对手只极小下注。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call"
+          },
+          {
+            "id": "C",
+            "label": "Raise 直接拿"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐继续。两高张加后门在面对很小下注时，远没到必须放弃的程度。",
+          "coach_translation": "你不是“什么都没有”，别看见没成牌就自动弃。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把可继续的高张和后门价值都丢掉了。",
+            "fix": "看到极小下注时，先把过度弃牌的手刹松一点。"
+          },
+          "C": {
+            "why_wrong": "没必要把基础防守 spot 直接升级为主动进攻。",
+            "fix": "先把该继续的牌舒服继续。"
+          }
+        }
+      },
+      "leak_tags": [
+        "OverfoldOvercards"
+      ],
+      "reminder_seed": "两高张加后门、对手又只点一下时，别太快把牌丢了。"
+    },
+    {
+      "scenario_id": "MVP-T-VALUE-003",
+      "title": "对手先跟再弱时强牌该更敢收费",
+      "theme": "面对爱跟注的对手怎么少送钱",
+      "difficulty": "medium",
+      "stage": "Exploit入门",
+      "tags": [
+        "TurnValueSizing",
+        "WeakLineExploit"
+      ],
+      "setup": {
+        "line": "flop check-call, turn check",
+        "hero_hand_type": "强 made hand"
+      },
+      "question": {
+        "prompt": "对手 flop 先跟，turn 再次显弱。你这时有强 made hand。最推荐的打法是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check 继续藏"
+          },
+          {
+            "id": "B",
+            "label": "小注价值下注"
+          },
+          {
+            "id": "C",
+            "label": "较大价值下注"
+          }
+        ],
+        "correct_option_id": "C"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更大价值下注。对手这条线里，很多较差牌仍会为继续付费。",
+          "coach_translation": "这种“先跟再弱”的线，很适合你把收费幅度拉上去。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你错过了对手显弱后最自然的收费窗口。",
+            "fix": "对手一弱下来，你的强牌要更敢收。"
+          },
+          "B": {
+            "why_wrong": "不是完全错，但偏保守。",
+            "fix": "对愿意继续的弱线，强牌多想想收更大一口。"
+          }
+        }
+      },
+      "leak_tags": [
+        "UnderSizingValue"
+      ],
+      "reminder_seed": "对手一旦显出“弱着跟”，你的强牌别打得太客气。"
+    },
+    {
+      "scenario_id": "MVP-T-DEF-001",
+      "title": "turn被突然顶回来边缘牌多认",
+      "theme": "避免不必要硬拼",
+      "difficulty": "medium",
+      "stage": "赛后复盘高频",
+      "tags": [
+        "TurnFacingRaise",
+        "PopulationTendency"
+      ],
+      "setup": {
+        "villain_type": "普通/偏被动",
+        "hero_hand_type": "边缘成牌"
+      },
+      "question": {
+        "prompt": "你在 turn 下了一枪，被普通或偏被动玩家突然 raise。你只有边缘成牌。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Fold"
+          },
+          {
+            "id": "B",
+            "label": "Call 再看 river"
+          },
+          {
+            "id": "C",
+            "label": "再顶回去"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐弃牌。对多数普通玩家来说，turn 突然 raise 往往代表比你想的更结实。",
+          "coach_translation": "turn 才突然发力的人，很多时候不是来聊天的。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你高估了 turn raise 的 bluff 频率。",
+            "fix": "朋友局里，turn raise 很多时候就是真。"
+          },
+          "C": {
+            "why_wrong": "这是把本来该止损的 spot 强行升级。",
+            "fix": "边缘牌面对 turn 突发强势，要更会认。"
+          }
+        }
+      },
+      "leak_tags": [
+        "StickyVsTurnRaise"
+      ],
+      "reminder_seed": "turn 被突然顶回来时，边缘牌别老想“再看一张”。"
+    },
+    {
+      "scenario_id": "MVP-F-SIMPLE-001",
+      "title": "对短码拿强一对少点设计",
+      "theme": "简单打法比花活更值钱",
+      "difficulty": "low",
+      "stage": "新手/首轮后续",
+      "tags": [
+        "ShortStack",
+        "SimplicityExploit"
+      ],
+      "setup": {
+        "villain_stack": "short",
+        "hero_hand_type": "顶对顶踢脚/overpair"
+      },
+      "question": {
+        "prompt": "对手是短码。你拿到强一对或 overpair。最推荐的打法通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "直接价值下注，走简单路线"
+          },
+          {
+            "id": "B",
+            "label": "慢打，设计后面的大坑"
+          },
+          {
+            "id": "C",
+            "label": "故意过牌诱导复杂博弈"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐直接价值下注。面对短码，强牌走简单路线通常更赚钱。",
+          "coach_translation": "短码局里很多时候不用秀，强牌直接收钱就行。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "你高估了慢打在低 SPR 场景里的价值。",
+            "fix": "短码时优先想的是简单直接收价值。"
+          },
+          "C": {
+            "why_wrong": "对短码过度设计，往往只会让简单 spot 变复杂。",
+            "fix": "强牌 + 短码，多用简单路线。"
+          }
+        }
+      },
+      "leak_tags": [
+        "FancyPlayWithShortStacks"
+      ],
+      "reminder_seed": "短码局里，强牌少点设计，多点直接收钱。"
+    },
+    {
+      "scenario_id": "MVP-R-STAB-001",
+      "title": "别人一路示弱时A高也能拿池",
+      "theme": "小池偷取",
+      "difficulty": "medium",
+      "stage": "基础提升",
+      "tags": [
+        "AceHighStab",
+        "WeaknessExploit"
+      ],
+      "setup": {
+        "line": "flop/turn双方偏被动",
+        "river": "villain再次check",
+        "hero_hand_type": "A high"
+      },
+      "question": {
+        "prompt": "双方一路都偏被动，river 对手再次 check，你只有 A 高。最推荐的动作是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check back"
+          },
+          {
+            "id": "B",
+            "label": "小注拿池"
+          },
+          {
+            "id": "C",
+            "label": "大注极化 bluff"
+          }
+        ],
+        "correct_option_id": "B"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐主动拿池。对手一路示弱时，A 高很多时候也能靠最后一击赢下这池。",
+          "coach_translation": "不是非得有牌才能赢，别人放弃时 A 高也能靠行动拿池。"
+        },
+        "incorrect": {
+          "A": {
+            "why_wrong": "你把一个对手明显在放手的小池让掉了。",
+            "fix": "别人一路都没表现强时，别总免费摊牌。"
+          },
+          "C": {
+            "why_wrong": "方向对，但尺度偏大。",
+            "fix": "这类 river stab 更适合轻轻拿，不必重锤。"
+          }
+        }
+      },
+      "leak_tags": [
+        "MissedRiverStab"
+      ],
+      "reminder_seed": "对手一路都没表现强时，别总把小池免费送回去。"
+    },
+    {
+      "scenario_id": "MVP-MIND-LEAK-001",
+      "title": "别为了显得强一直打不该打的牌",
+      "theme": "心态型leak修正",
+      "difficulty": "medium",
+      "stage": "赛后复盘映射",
+      "tags": [
+        "PsychologicalLeak",
+        "Overaggression"
+      ],
+      "setup": {
+        "mindset": "怕自己显得弱",
+        "spot": "明显不适合继续施压的牌面"
+      },
+      "question": {
+        "prompt": "你这手更像是因为“不想显得怂”而想继续施压。最推荐的动作通常是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "Check / 收手"
+          },
+          {
+            "id": "B",
+            "label": "继续小 bluff 维持形象"
+          },
+          {
+            "id": "C",
+            "label": "大 bluff 夺回气势"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐收手。这手更像是你不想显得弱，而不是你真的有足够理由继续施压。",
+          "coach_translation": "你不是非得每手都像在掌控全场，能稳住也是高手感的一部分。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "这是把“想看起来强”当成了下注理由。",
+            "fix": "下注前问：我是在打牌，还是在打形象？"
+          },
+          "C": {
+            "why_wrong": "情绪越强，错误通常越贵。",
+            "fix": "别为了看起来强，一直把不该打的牌也打出去。"
+          }
+        }
+      },
+      "leak_tags": [
+        "EgoAggression"
+      ],
+      "reminder_seed": "别为了看起来强，一直把不该打的牌也打出去。"
+    },
+    {
+      "scenario_id": "MVP-CORE-001",
+      "title": "拿不准时先少犯错",
+      "theme": "MVP核心总原则",
+      "difficulty": "low",
+      "stage": "全阶段",
+      "tags": [
+        "CorePrinciple",
+        "ErrorMinimization"
+      ],
+      "setup": {
+        "spot": "边界不清、信息不足的普通朋友局场景"
+      },
+      "question": {
+        "prompt": "当你真的拿不太准，又缺乏足够信息时，MVP 最推荐的总原则是？",
+        "options": [
+          {
+            "id": "A",
+            "label": "优先选择更稳妥、少犯大错的路线"
+          },
+          {
+            "id": "B",
+            "label": "选更激进的动作，争取一下"
+          },
+          {
+            "id": "C",
+            "label": "凭感觉做最有气势的决定"
+          }
+        ],
+        "correct_option_id": "A"
+      },
+      "feedback": {
+        "correct": {
+          "summary": "推荐更稳妥路线。你现在最需要的不是极限操作，而是少犯大错。",
+          "coach_translation": "拿不准时，别急着证明自己；先少送，长期就已经赢很多人了。"
+        },
+        "incorrect": {
+          "B": {
+            "why_wrong": "边界不清时，激进动作更容易把小问题放大成大损失。",
+            "fix": "不确定时先别送，是业余玩家最赚钱的能力之一。"
+          },
+          "C": {
+            "why_wrong": "“有气势”不是决策标准。",
+            "fix": "朋友局真正值钱的是减少大错，不是操作好看。"
+          }
+        }
+      },
+      "leak_tags": [
+        "LackOfDiscipline"
+      ],
+      "reminder_seed": "拿不准时先少犯错，这本身就是朋友局里最赚钱的能力。"
+    }
+  ]
+}

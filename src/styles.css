@@ -1,0 +1,369 @@
+:root {
+  font-family:
+    "SF Pro Text", "PingFang SC", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+  color: #f6f0e2;
+  background:
+    radial-gradient(circle at top, rgba(218, 160, 68, 0.18), transparent 35%),
+    linear-gradient(180deg, #0d2a24 0%, #081a17 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.phone-frame {
+  width: 100%;
+  max-width: 393px;
+  min-height: 852px;
+  border-radius: 32px;
+  background: rgba(4, 15, 12, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  position: relative;
+}
+
+.page {
+  min-height: 852px;
+  padding: 28px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page h1,
+.page h2,
+.page p {
+  margin: 0;
+}
+
+.page h1 {
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.page-subtitle,
+.muted {
+  color: rgba(246, 240, 226, 0.72);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #efe6d2;
+  color: #112019;
+  border-radius: 24px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card-muted {
+  background: rgba(239, 230, 210, 0.9);
+}
+
+.card-eyebrow,
+.detail-label {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(17, 32, 25, 0.62);
+}
+
+.card-title {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.button {
+  border: none;
+  border-radius: 18px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button-full {
+  width: 100%;
+}
+
+.button-primary {
+  background: linear-gradient(180deg, #daad53 0%, #b4872e 100%);
+  color: #1a1304;
+  font-weight: 700;
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f6f0e2;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.button-text {
+  background: transparent;
+  color: #f6f0e2;
+  padding-inline: 0;
+}
+
+.feature-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-card {
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f6f0e2;
+  padding: 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.option-card.selected {
+  border-color: rgba(218, 160, 68, 0.9);
+  background: rgba(218, 160, 68, 0.18);
+}
+
+.option-card-label {
+  font-weight: 600;
+}
+
+.option-card-description {
+  color: rgba(246, 240, 226, 0.72);
+  font-size: 14px;
+}
+
+.sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.36);
+  display: flex;
+  align-items: flex-end;
+}
+
+.sheet {
+  width: 100%;
+  background: #f1e6d5;
+  color: #112019;
+  border-radius: 28px 28px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sheet-close {
+  border: none;
+  background: transparent;
+  color: #395447;
+  cursor: pointer;
+}
+
+.progress-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgba(246, 240, 226, 0.82);
+}
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f2b85e, #cf8c31);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.detail-grid strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+.action-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.ordered-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field input,
+.field select {
+  border: 1px solid rgba(17, 32, 25, 0.12);
+  border-radius: 14px;
+  padding: 14px 12px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.field-inline {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.pill-row {
+  display: flex;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 32, 25, 0.08);
+  font-size: 12px;
+}
+
+.stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.stepper-item {
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  display: grid;
+  place-items: center;
+  color: rgba(246, 240, 226, 0.72);
+}
+
+.stepper-item.active {
+  background: rgba(218, 160, 68, 0.18);
+  color: #f6f0e2;
+  border: 1px solid rgba(218, 160, 68, 0.9);
+}
+
+.split-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.split-actions .button {
+  flex: 1;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 112, 92, 0.18);
+  color: #ff9a89;
+  border: 1px solid rgba(255, 112, 92, 0.36);
+}
+
+.error-text {
+  color: #ff9a89;
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding: 0;
+  }
+
+  .phone-frame {
+    max-width: none;
+    min-height: 100vh;
+    border-radius: 0;
+    border: none;
+  }
+
+  .page {
+    min-height: 100vh;
+  }
+}

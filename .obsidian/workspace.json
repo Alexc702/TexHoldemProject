@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d1d73f646c4716c1",
+        "id": "dbd76d539395c211",
         "type": "tabs",
         "children": [
           {
-            "id": "14fb37a81757eefa",
+            "id": "4cadef914b373c44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mvp-p0/README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -183,8 +179,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "14fb37a81757eefa",
+  "active": "4cadef914b373c44",
   "lastOpenFiles": [
+    "mvp-p0/README.md",
     "public",
     "src/state",
     "src/pages",
@@ -199,7 +196,6 @@
     "product-dev/TexHolding-MVP-P0-development-plan.md",
     "mvp-p0",
     "product-dev/mvp-p0",
-    "product-dev/未命名文件夹",
     "knowledge-base/README.md",
     "texholding-mvp-prd.md",
     "input-material/IMG_2982.PNG",

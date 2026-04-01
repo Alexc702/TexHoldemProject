@@ -3,3 +3,4 @@ dist
 .DS_Store
 *.tsbuildinfo
 input-material/*.MP4
+.local-data

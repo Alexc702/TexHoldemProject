@@ -1,0 +1,714 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://texholding.local/schemas/question-bank-attribution-v2.schema.json",
+  "title": "TexHolding Question Bank Attribution Schema V2",
+  "description": "Canonical schema for question intent, deviation evidence, attribution stability, recommendation mapping, and result traceability across GTO, Exploit, and Line & Range tracks.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "track_catalog",
+    "question_bank_item",
+    "result_evidence_record",
+    "session_aggregation_rule",
+    "recommendation_mapping_rule"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "2.0.0"
+    },
+    "track_catalog": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/trackDefinition"
+      }
+    },
+    "question_bank_item": {
+      "$ref": "#/$defs/questionBankItem"
+    },
+    "result_evidence_record": {
+      "$ref": "#/$defs/resultEvidenceRecord"
+    },
+    "session_aggregation_rule": {
+      "$ref": "#/$defs/sessionAggregationRule"
+    },
+    "recommendation_mapping_rule": {
+      "$ref": "#/$defs/recommendationMappingRule"
+    }
+  },
+  "$defs": {
+    "trackId": {
+      "type": "string",
+      "enum": ["gto", "exploit", "line_range"]
+    },
+    "skillIssue": {
+      "type": "string",
+      "enum": [
+        "standard_line_recognition",
+        "sizing_calibration",
+        "line_continuation",
+        "opponent_identification",
+        "deviation_discipline",
+        "value_targeting",
+        "range_narrowing",
+        "range_density_reading",
+        "hero_representation",
+        "future_street_forecast"
+      ]
+    },
+    "decisionFocus": {
+      "type": "string",
+      "enum": [
+        "baseline_action",
+        "sizing_choice",
+        "continuation_discipline",
+        "deviation_permission",
+        "target_selection",
+        "range_narrowing",
+        "density_comparison",
+        "hero_representation",
+        "future_street_forecast"
+      ]
+    },
+    "questionType": {
+      "type": "string",
+      "enum": [
+        "exact_action",
+        "sizing",
+        "frequency_bucket",
+        "line_continuation",
+        "opponent_read",
+        "deviation_decision",
+        "target_selection",
+        "villain_range_narrowing",
+        "hero_range_representation",
+        "range_density",
+        "range_shift_trigger",
+        "future_street_forecast"
+      ]
+    },
+    "street": {
+      "type": "string",
+      "enum": ["preflop", "flop", "turn", "river"]
+    },
+    "potType": {
+      "type": "string",
+      "enum": ["srp", "three_bet_pot", "four_bet_pot", "multiway", "limped_pot"]
+    },
+    "boardClass": {
+      "type": "string",
+      "enum": [
+        "high_card_dry",
+        "paired_dry",
+        "low_connected",
+        "two_tone_dynamic",
+        "monotone",
+        "broadway_dynamic",
+        "turn_blank",
+        "turn_scare",
+        "river_polarizing",
+        "flush_complete",
+        "paired_runout",
+        "unknown"
+      ]
+    },
+    "opponentType": {
+      "type": "string",
+      "enum": [
+        "station",
+        "passive_rec",
+        "overfolder",
+        "weak_reg",
+        "aggro_reg",
+        "maniac",
+        "unknown"
+      ]
+    },
+    "rangeBucket": {
+      "type": "string",
+      "enum": [
+        "air",
+        "high_card",
+        "weak_pair",
+        "medium_made_hand",
+        "strong_made_hand",
+        "draw",
+        "nuts_or_near_nuts"
+      ]
+    },
+    "densityBucket": {
+      "type": "string",
+      "enum": ["very_high", "medium", "low", "almost_none"]
+    },
+    "primaryAttributionTag": {
+      "type": "string",
+      "enum": [
+        "gto_under_aggression",
+        "gto_over_aggression",
+        "gto_sizing_too_small",
+        "gto_sizing_too_large",
+        "gto_bad_continuation",
+        "gto_range_confusion",
+        "missed_exploit",
+        "false_exploit",
+        "wrong_target",
+        "over_extension",
+        "value_bluff_inversion",
+        "low_confidence_overreach",
+        "range_not_narrowed",
+        "range_over_narrowed",
+        "hero_line_misrepresentation",
+        "villain_density_misread",
+        "future_street_disconnect",
+        "combo_weight_misread"
+      ]
+    },
+    "secondaryAttributionTag": {
+      "type": "string",
+      "enum": [
+        "missed_range_advantage",
+        "misread_board_texture",
+        "failed_to_identify_station",
+        "failed_to_identify_overfolder",
+        "failed_to_identify_passive_strength",
+        "failed_to_extract_value",
+        "failed_to_respect_uncertainty",
+        "overestimate_bluff_density",
+        "underestimate_value_density",
+        "misread_capped_range",
+        "misread_polarization",
+        "misread_range_merge",
+        "ignore_draw_retention",
+        "ignore_showdown_value_retention",
+        "line_not_supported_by_future_street"
+      ]
+    },
+    "recommendationTag": {
+      "type": "string",
+      "enum": [
+        "gto_cbet_easy_boards",
+        "gto_stop_auto_cbet_bad_boards",
+        "gto_turn_barrel_conditions",
+        "exploit_vs_station_value",
+        "exploit_vs_passive_strength",
+        "exploit_vs_overfolder_pressure",
+        "exploit_confidence_discipline",
+        "line_range_flop_narrowing",
+        "line_range_turn_density",
+        "line_range_hero_representation",
+        "line_range_river_bluffcatch_density",
+        "line_range_multiway_collapse"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "difficultyTier": {
+      "type": "string",
+      "enum": ["foundation", "applied", "edge_case"]
+    },
+    "qaStatus": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "tested", "production_ready"]
+    },
+    "trackDefinition": {
+      "type": "object",
+      "required": ["track_id", "name_cn", "goal_cn"],
+      "properties": {
+        "track_id": {
+          "$ref": "#/$defs/trackId"
+        },
+        "name_cn": {
+          "type": "string"
+        },
+        "goal_cn": {
+          "type": "string"
+        }
+      }
+    },
+    "rangeState": {
+      "type": "object",
+      "required": ["range_buckets"],
+      "properties": {
+        "range_buckets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["bucket", "density"],
+            "properties": {
+              "bucket": {
+                "$ref": "#/$defs/rangeBucket"
+              },
+              "density": {
+                "$ref": "#/$defs/densityBucket"
+              },
+              "combo_bucket": {
+                "type": "string",
+                "enum": ["3_5", "6_10", "10_plus", "unknown"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "answerOption": {
+      "type": "object",
+      "required": ["option_id", "label", "semantic_action"],
+      "properties": {
+        "option_id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "semantic_action": {
+          "type": "string"
+        }
+      }
+    },
+    "expectedLogic": {
+      "type": "object",
+      "required": ["baseline_reason", "future_line_validity"],
+      "properties": {
+        "baseline_reason": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "baseline_before_deviation": {
+          "type": "string"
+        },
+        "villain_assumption": {
+          "$ref": "#/$defs/opponentType"
+        },
+        "deviation_reason": {
+          "type": "string"
+        },
+        "failure_if_wrong_read": {
+          "type": "string"
+        },
+        "range_before": {
+          "$ref": "#/$defs/rangeState"
+        },
+        "range_after": {
+          "$ref": "#/$defs/rangeState"
+        },
+        "density_shift": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["bucket", "from", "to"],
+            "properties": {
+              "bucket": {
+                "$ref": "#/$defs/rangeBucket"
+              },
+              "from": {
+                "$ref": "#/$defs/densityBucket"
+              },
+              "to": {
+                "$ref": "#/$defs/densityBucket"
+              }
+            }
+          }
+        },
+        "future_line_validity": {
+          "type": "string",
+          "enum": ["stable", "conditional", "fragile"]
+        }
+      }
+    },
+    "deviationEvidence": {
+      "type": "object",
+      "required": [
+        "deviation_family",
+        "deviation_direction",
+        "severity_weight",
+        "primary_tag"
+      ],
+      "properties": {
+        "deviation_family": {
+          "type": "string",
+          "enum": [
+            "aggression_direction",
+            "sizing_direction",
+            "baseline_vs_deviation",
+            "target_selection",
+            "range_scope",
+            "density_read",
+            "line_story",
+            "future_line_planning"
+          ]
+        },
+        "deviation_direction": {
+          "type": "string",
+          "enum": [
+            "too_passive",
+            "too_aggressive",
+            "too_small",
+            "too_large",
+            "deviated_without_permission",
+            "missed_allowed_deviation",
+            "narrowed_too_little",
+            "narrowed_too_much",
+            "overestimated_bluff_density",
+            "underestimated_value_density",
+            "story_not_credible",
+            "next_street_not_supported"
+          ]
+        },
+        "severity_weight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "primary_tag": {
+          "$ref": "#/$defs/primaryAttributionTag"
+        },
+        "secondary_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/secondaryAttributionTag"
+          }
+        },
+        "evidence_signals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "board_texture_signal",
+              "range_advantage_signal",
+              "villain_profile_signal",
+              "line_consistency_signal",
+              "density_signal",
+              "future_street_signal",
+              "repeat_error_signal"
+            ]
+          }
+        }
+      }
+    },
+    "recommendationContract": {
+      "type": "object",
+      "required": [
+        "primary_recommendation_tag",
+        "primary_pack_id",
+        "table_cue_template_id"
+      ],
+      "properties": {
+        "primary_recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "primary_pack_id": {
+          "type": "string"
+        },
+        "cross_track_recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "cross_track_pack_id": {
+          "type": "string"
+        },
+        "table_cue_template_id": {
+          "type": "string"
+        },
+        "stop_rule_template_id": {
+          "type": "string"
+        },
+        "do_rule_template_id": {
+          "type": "string"
+        }
+      }
+    },
+    "provenanceRecord": {
+      "type": "object",
+      "required": ["source_family", "source_version", "population_scope"],
+      "properties": {
+        "source_family": {
+          "type": "string",
+          "enum": [
+            "solver_baseline",
+            "coach_playbook",
+            "population_read",
+            "internal_model"
+          ]
+        },
+        "source_version": {
+          "type": "string"
+        },
+        "population_scope": {
+          "type": "string",
+          "enum": ["live_lowstakes", "home_game", "loose_private", "generic"]
+        },
+        "review_owner": {
+          "type": "string"
+        }
+      }
+    },
+    "qualityGate": {
+      "type": "object",
+      "properties": {
+        "qa_status": {
+          "$ref": "#/$defs/qaStatus"
+        },
+        "qa_notes": {
+          "type": "string"
+        },
+        "last_reviewed_at": {
+          "type": "string"
+        }
+      }
+    },
+    "questionBankItem": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "track",
+        "question_type",
+        "decision_focus",
+        "primary_skill_issue",
+        "street",
+        "pot_type",
+        "board_class",
+        "prompt_cn",
+        "options",
+        "correct_option_id",
+        "expected_logic",
+        "error_map",
+        "recommendation_contract"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "track": {
+          "$ref": "#/$defs/trackId"
+        },
+        "question_type": {
+          "$ref": "#/$defs/questionType"
+        },
+        "decision_focus": {
+          "$ref": "#/$defs/decisionFocus"
+        },
+        "spot_family": {
+          "type": "string"
+        },
+        "variant_group_id": {
+          "type": "string"
+        },
+        "primary_skill_issue": {
+          "$ref": "#/$defs/skillIssue"
+        },
+        "secondary_skill_issues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skillIssue"
+          }
+        },
+        "difficulty_tier": {
+          "$ref": "#/$defs/difficultyTier"
+        },
+        "mastery_weight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "prerequisite_pack_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "street": {
+          "$ref": "#/$defs/street"
+        },
+        "pot_type": {
+          "$ref": "#/$defs/potType"
+        },
+        "board_class": {
+          "$ref": "#/$defs/boardClass"
+        },
+        "opponent_type": {
+          "$ref": "#/$defs/opponentType"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceRecord"
+        },
+        "prompt_cn": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/answerOption"
+          }
+        },
+        "correct_option_id": {
+          "type": "string"
+        },
+        "expected_logic": {
+          "$ref": "#/$defs/expectedLogic"
+        },
+        "error_map": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["selected_option_id", "deviation_evidence"],
+            "properties": {
+              "selected_option_id": {
+                "type": "string"
+              },
+              "deviation_evidence": {
+                "$ref": "#/$defs/deviationEvidence"
+              }
+            }
+          }
+        },
+        "recommendation_contract": {
+          "$ref": "#/$defs/recommendationContract"
+        },
+        "quality_gate": {
+          "$ref": "#/$defs/qualityGate"
+        }
+      }
+    },
+    "resultEvidenceRecord": {
+      "type": "object",
+      "required": [
+        "session_id",
+        "question_id",
+        "selected_option_id",
+        "correct_option_id",
+        "track",
+        "primary_tag",
+        "severity_weight",
+        "recommendation_tag"
+      ],
+      "properties": {
+        "session_id": {
+          "type": "string"
+        },
+        "question_id": {
+          "type": "string"
+        },
+        "selected_option_id": {
+          "type": "string"
+        },
+        "correct_option_id": {
+          "type": "string"
+        },
+        "track": {
+          "$ref": "#/$defs/trackId"
+        },
+        "primary_tag": {
+          "$ref": "#/$defs/primaryAttributionTag"
+        },
+        "secondary_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/secondaryAttributionTag"
+          }
+        },
+        "severity_weight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "cross_track_recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "repeat_error_score": {
+          "type": "number"
+        },
+        "time_decay_weight": {
+          "type": "number"
+        }
+      }
+    },
+    "sessionAggregationRule": {
+      "type": "object",
+      "required": [
+        "rule_id",
+        "evidence_window_size",
+        "minimum_primary_hits_for_high_confidence",
+        "minimum_primary_hits_for_medium_confidence"
+      ],
+      "properties": {
+        "rule_id": {
+          "type": "string"
+        },
+        "evidence_window_size": {
+          "type": "integer",
+          "minimum": 3
+        },
+        "minimum_primary_hits_for_high_confidence": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "minimum_primary_hits_for_medium_confidence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cross_track_recommendation_trigger_score": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "spacing_trigger_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unseen_transfer_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "recommendationMappingRule": {
+      "type": "object",
+      "required": [
+        "rule_id",
+        "primary_tag",
+        "secondary_tag_support",
+        "primary_recommendation_tag",
+        "primary_pack_id"
+      ],
+      "properties": {
+        "rule_id": {
+          "type": "string"
+        },
+        "primary_tag": {
+          "$ref": "#/$defs/primaryAttributionTag"
+        },
+        "secondary_tag_support": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/secondaryAttributionTag"
+          }
+        },
+        "primary_recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "primary_pack_id": {
+          "type": "string"
+        },
+        "cross_track_recommendation_tag": {
+          "$ref": "#/$defs/recommendationTag"
+        },
+        "cross_track_pack_id": {
+          "type": "string"
+        },
+        "transfer_test_required": {
+          "type": "boolean"
+        },
+        "transfer_pass_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

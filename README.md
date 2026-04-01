@@ -1,6 +1,9 @@
-# TexHolding MVP P0 Frontend
+# TexHolding Frontend
 
-基于 `/mvp-p0` Canonical Package 启动的前端开发骨架。
+基于 `/mvp-p0` Canonical Package 启动的前端开发骨架，目前同时包含：
+
+- 现有 `P0` 版本
+- 独立并存的 `Three-Lines` 版本
 
 ## 当前范围
 
@@ -14,6 +17,9 @@
 - Home
 - Review Input
 - Review Result
+- Three-Lines Home / Training Hub / Track Detail
+- Three-Lines Track-based Session / Result / Reminder
+- Three-Lines Cross-track Review
 
 ## 当前实现
 
@@ -24,6 +30,7 @@
 - 本地状态持久化
 - mock runtime 数据
 - 训练结果 / 提醒 / 复盘结果的基础规则逻辑
+- 独立三线版本路由与状态树
 
 ## 运行
 
@@ -32,6 +39,18 @@
 ```bash
 npm install
 npm run dev
+```
+
+路由入口：
+
+- 现有 P0：`/welcome`
+- 三线独立版：`/three-lines/welcome`
+
+自测：
+
+```bash
+npm run test:smoke
+npm run test:smoke:three-lines
 ```
 
 ## 文档基线

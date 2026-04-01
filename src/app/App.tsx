@@ -9,22 +9,39 @@ import { ReviewResultPage } from "../pages/ReviewResultPage";
 import { TrainingPage } from "../pages/TrainingPage";
 import { TrainingResultPage } from "../pages/TrainingResultPage";
 import { WelcomePage } from "../pages/WelcomePage";
+import { ThreeLinesApp } from "../three-lines/app/ThreeLinesApp";
+import { ThreeLinesStateProvider } from "../three-lines/state/ThreeLinesState";
 
 export function App() {
   return (
-    <AppChrome>
-      <Routes>
-        <Route path="/" element={<Navigate to="/welcome" replace />} />
-        <Route path="/welcome" element={<WelcomePage />} />
-        <Route path="/onboarding/step-1" element={<OnboardingStep1Page />} />
-        <Route path="/onboarding/step-2" element={<OnboardingStep2Page />} />
-        <Route path="/training" element={<TrainingPage />} />
-        <Route path="/training/result" element={<TrainingResultPage />} />
-        <Route path="/reminder" element={<ReminderPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/review/input" element={<ReviewInputPage />} />
-        <Route path="/review/result" element={<ReviewResultPage />} />
-      </Routes>
-    </AppChrome>
+    <Routes>
+      <Route path="/" element={<Navigate to="/welcome" replace />} />
+      <Route
+        path="/three-lines/*"
+        element={
+          <ThreeLinesStateProvider>
+            <ThreeLinesApp />
+          </ThreeLinesStateProvider>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <AppChrome>
+            <Routes>
+              <Route path="/welcome" element={<WelcomePage />} />
+              <Route path="/onboarding/step-1" element={<OnboardingStep1Page />} />
+              <Route path="/onboarding/step-2" element={<OnboardingStep2Page />} />
+              <Route path="/training" element={<TrainingPage />} />
+              <Route path="/training/result" element={<TrainingResultPage />} />
+              <Route path="/reminder" element={<ReminderPage />} />
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/review/input" element={<ReviewInputPage />} />
+              <Route path="/review/result" element={<ReviewResultPage />} />
+            </Routes>
+          </AppChrome>
+        }
+      />
+    </Routes>
   );
 }

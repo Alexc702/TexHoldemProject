@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dbd76d539395c211",
+        "id": "d166911c41a042fd",
         "type": "tabs",
         "children": [
           {
-            "id": "4cadef914b373c44",
+            "id": "350e4ac5e3894a36",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "mvp-p0/content/TexHolding-seed-batch-roadmap.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "TexHolding-seed-batch-roadmap"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.5
   },
   "right": {
     "id": "64b632a90de56e04",
@@ -179,23 +183,40 @@
       "bases:新建数据库": false
     }
   },
-  "active": "4cadef914b373c44",
+  "active": "350e4ac5e3894a36",
   "lastOpenFiles": [
-    "mvp-p0/README.md",
-    "public",
-    "src/state",
-    "src/pages",
-    "src/lib",
-    "src/data",
-    "src/components",
-    "src/app",
-    "src",
+    "dist/assets/index-ow9Ehss7.js",
+    "dist/assets/index-Bs6HMrNN.js",
+    "src/three-lines/data/runtime.ts",
+    "src/three-lines/data/foundationScenarios.ts",
+    "src/three-lines/data/gtoScenarios.ts",
+    "mvp-p0/content/TexHolding-batch-1-canonical-variant-manifest.csv",
+    "mvp-p0/content/TexHolding-seed-to-runtime-generation-framework.md",
+    "mvp-p0/content/TexHolding-seed-batch-roadmap.md",
+    "Users/lulu/Codex/TexHoldingProject/mvp-p0/content/TexHolding-exploit-high-value-bank.csv 1.md",
+    "mvp-p0/content/TexHolding-exploit-line-range-bank-spec.md",
+    "Users/lulu/Codex/TexHoldingProject/mvp-p0/content/TexHolding-exploit-high-value-bank.csv.md",
+    "Users/lulu/Codex/TexHoldingProject/mvp-p0/content",
+    "Users/lulu/Codex/TexHoldingProject/mvp-p0",
+    "Users/lulu/Codex/TexHoldingProject",
+    "Users/lulu/Codex",
+    "Users/lulu",
+    "mvp-p0/product/TexHolding-Three-Lines-PRD.md",
     "mvp-p0/product/TexHolding-MVP-P0-PRD.md",
+    "mvp-p0/product/TexHolding-industry-best-self-audit.md",
+    "mvp-p0/development/TexHolding-evidence-chain-runtime-plan.md",
+    "mvp-p0/content/TexHolding-line-range-training-spec.md",
+    "mvp-p0/content/TexHolding-attribution-evidence-chain-spec.md",
+    "mvp-p0/content/TexHolding-real-value-and-feedback-logic.md",
+    "mvp-p0/product/TexHolding-content-hardening-self-evaluation.md",
+    "mvp-p0/product/TexHolding-three-lines-training-value-comparison-report.md",
+    "mvp-p0/content/TexHolding-question-bank-research.md",
+    "mvp-p0/design/TexHolding-three-lines-pencil-design-brief.md",
+    "mvp-p0/product/TexHolding-three-lines-product-integration.md",
     "mvp-p0/content/TexHolding-MVP-P0-content-spec.md",
+    "mvp-p0/README.md",
     "product-design/texholding-mvp-prd.md",
     "product-dev/TexHolding-MVP-P0-development-plan.md",
-    "mvp-p0",
-    "product-dev/mvp-p0",
     "knowledge-base/README.md",
     "texholding-mvp-prd.md",
     "input-material/IMG_2982.PNG",

@@ -5,7 +5,10 @@ type StepperProps = {
 
 export function Stepper({ current, total }: StepperProps) {
   return (
-    <div className="stepper">
+    <div
+      className="stepper"
+      style={{ gridTemplateColumns: `repeat(${total}, minmax(0, 1fr))` }}
+    >
       {Array.from({ length: total }).map((_, index) => (
         <div
           key={index}

@@ -1,14 +1,15 @@
 type ProgressBarProps = {
   current: number;
   total: number;
+  label?: string;
 };
 
-export function ProgressBar({ current, total }: ProgressBarProps) {
+export function ProgressBar({ current, total, label = "首轮训练" }: ProgressBarProps) {
   const percentage = total === 0 ? 0 : Math.min(100, Math.round((current / total) * 100));
   return (
     <div className="progress-card">
       <div className="progress-row">
-        <span>首轮训练</span>
+        <span>{label}</span>
         <span>
           {current} / {total}
         </span>

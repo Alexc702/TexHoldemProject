@@ -4,11 +4,12 @@ type PageProps = PropsWithChildren<{
   title?: string;
   subtitle?: string;
   action?: ReactNode;
+  className?: string;
 }>;
 
-export function Page({ title, subtitle, action, children }: PageProps) {
+export function Page({ title, subtitle, action, className = "", children }: PageProps) {
   return (
-    <main className="page">
+    <main className={`page ${className}`.trim()}>
       {(title || subtitle || action) && (
         <header className="page-header">
           <div>

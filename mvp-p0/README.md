@@ -1,6 +1,6 @@
 # TexHolding MVP P0 Canonical Package
 
-本目录是 TexHolding 的唯一 `MVP / P0` 材料包。
+本目录是 TexHolding 的 `MVP / P0` 与三线扩展设计材料包。
 
 目标：把 `产品 / 设计 / 内容 / 开发` 统一到同一个可执行版本，避免继续混用旧 PRD 与新设计稿。
 
@@ -29,6 +29,16 @@ P0 开发时，文件优先级固定如下：
    - 开发拆分
    - 实施顺序
    - 里程碑与验收门槛
+6. `content/TexHolding-line-range-training-spec.md`
+   - 行动线 / 范围训练线规范
+7. `content/TexHolding-question-bank-attribution-schema.json`
+   - machine-readable 题库归因 schema
+8. `product/TexHolding-three-lines-product-integration.md`
+   - 三条线产品融合方案
+9. `product/TexHolding-Three-Lines-PRD.md`
+   - 三条线整合版可开发 PRD
+10. `design/TexHolding-three-lines-pencil-design-brief.md`
+   - Pencil 设计需求
 
 如文件之间有冲突，按上述顺序处理。
 
@@ -78,23 +88,33 @@ P0 只覆盖以下主链路：
 ## 3. 推荐阅读顺序
 
 1. 先看 `product/TexHolding-MVP-P0-PRD.md`
-2. 再看 `design/TexHolding-MVP-P0-UX.pen`
-3. 然后看 `design/TexHolding-MVP-P0-design-baseline.md`
-4. 内容与前后端对接时看 `content/TexHolding-MVP-P0-content-spec.md`
-5. 排期与拆任务时看 `development/TexHolding-MVP-P0-development-plan.md`
+2. 如果是三线整合阶段，再看 `product/TexHolding-Three-Lines-PRD.md`
+3. 再看 `product/TexHolding-three-lines-product-integration.md`
+4. 然后看 `content/TexHolding-line-range-training-spec.md`
+5. 内容与前后端对接时看 `content/TexHolding-question-bank-attribution-schema.json`
+6. 视觉与交互参考 `design/TexHolding-MVP-P0-UX.pen`
+7. 三线扩展设计看 `design/TexHolding-three-lines-pencil-design-brief.md`
 
 ## 4. 目录结构
 
 ```text
 mvp-p0/
 ├── README.md
+├── content/
+│   ├── TexHolding-MVP-P0-content-spec.md
+│   ├── TexHolding-line-range-training-spec.md
+│   ├── TexHolding-question-bank-attribution-schema.json
+│   ├── TexHolding-question-bank-research.md
+│   ├── TexHolding-question-bank-source-catalog.csv
+│   └── TexHolding-real-value-and-feedback-logic.md
 ├── product/
-│   └── TexHolding-MVP-P0-PRD.md
+│   ├── TexHolding-MVP-P0-PRD.md
+│   ├── TexHolding-three-lines-product-integration.md
+│   └── TexHolding-Three-Lines-PRD.md
 ├── design/
 │   ├── TexHolding-MVP-P0-UX.pen
-│   └── TexHolding-MVP-P0-design-baseline.md
-├── content/
-│   └── TexHolding-MVP-P0-content-spec.md
+│   ├── TexHolding-MVP-P0-design-baseline.md
+│   └── TexHolding-three-lines-pencil-design-brief.md
 └── development/
     └── TexHolding-MVP-P0-development-plan.md
 ```
